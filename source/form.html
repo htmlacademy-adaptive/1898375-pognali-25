@@ -211,4 +211,281 @@
           </a>
         </li>
       </ol>
+      <form class="plan-constructor-section__constructor-form constructor-form" action="https://echo.htmlacademy.ru/" method="get" name="constructor-form">
+          <h3 class="constructor-form__title constructor-title">Шаг 1. Даты пребывания</h3>
+          <p class="constructor-form__description constructor-description">Укажите предпочтительное количество попутчиков, которыхвы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+          <fieldset class="constructor-form__fieldset first-step-fieldset">
+            <legend class="visually-hidden">Количество участников и длительность.</legend>
+            <div class="first-step-fieldset__companion-wrapper companion-wrapper">
+              <label class="companion-wrapper__label companion-label" for="companion-input">
+                ищу попутчиков:
+                <span class="companions-sub-label">чел.</span>
+              </label>
+              <button class="companion-wrapper__reduce-button reduce-button" type="button"></button>
+              <input class="companion-wrapper__companion-input" type="number" value="2" name="companion-input" id="companion-input">
+              <button class="companion-wrapper__increase-button increase-button" type="button"></button>
+            </div>
+            <div class="first-step-fieldset__duration-wrapper duration-wrapper">
+              <label class="duration-wrapper__label duration-label" for="duration-input">
+                длительность:
+                <span class="duration-sub-label">дн.</span>
+              </label>
+              <button class="duration-wrapper__reduce-button reduce-button" type="button"></button>
+              <input class="duration-wrapper__companion-input duration-input" type="number" value="3" name="duration-input" id="duration-input">
+              <button class="duration-wrapper__increase-button increase-button" type="button"></button>
+            </div>
+            <div class="first-step-fieldset__children-checkbox-wrapper children-checkbox-wrapper">
+              <label class="children-checkbox-wrapper__label children-checkbox-label">
+                <input class="children-checkbox-label__checkbox visually-hidden" type="checkbox" name="children-checkbox"checked>
+                <span class="children-checkbox-label__sub-label">можно с детьми</span>
+              </label>
+            </div>
+            <div class="first-step-fieldset__calendar-wrapper first-step-calendar">
+              <div class="first-step-calendar__calendar-control calendar-control">
+                <button class="calendar-control__previous-button" type="button"></button>
+                <input class="calendar-control__input month-yaer-input" type="month" value="2019-03">
+                <button class="calendar-control__next-button" type="button"></button>
+              </div>
+              <table class="first-step-calendar__body calendar-body">
+                <thead class="calendar-body__thead calendar-thead">
+                  <tr class="calendar-thead__head-row">
+                    <th class="calendar-thead__head-cell">П</th>
+                    <th class="calendar-thead__head-cell">В</th>
+                    <th class="calendar-thead__head-cell">С</th>
+                    <th class="calendar-thead__head-cell">Ч</th>
+                    <th class="calendar-thead__head-cell">П</th>
+                    <th class="calendar-thead__head-cell">С</th>
+                    <th class="calendar-thead__head-cell">В</th>
+                  </tr>
+                </thead>
+                <tbody class="calendar-body__tbody calendar-tbody">
+                  <tr class="calendar-tbody__tbody-row tbody-row">
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="23" name="calendar-date-monday">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="24" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="25" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="26" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="27" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="28" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="1" name="calendar-date">
+                      </label>
+                    </th>
+                  </tr>
+                  <tr class="calendar-tbody__tbody-row tbody-row">
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="2" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="3" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="4" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="5" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="6" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="7" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="8" name="calendar-date">
+                      </label>
+                    </th>
+                  </tr>
+                  <tr class="calendar-tbody__tbody-row tbody-row">
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="9" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="10" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="11" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="12" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="13" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="14" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="15" name="calendar-date">
+                      </label>
+                    </th>
+                  </tr>
+                  <tr class="calendar-tbody__tbody-row tbody-row">
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="16" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="17" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="18" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="19" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="20" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="21" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="22" name="calendar-date">
+                      </label>
+                    </th>
+                  </tr>
+                  <tr class="calendar-tbody__tbody-row tbody-row">
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="23" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="24" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="25" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="26" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="27" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="28" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="29" name="calendar-date">
+                      </label>
+                    </th>
+                  </tr>
+                  <tr class="calendar-tbody__tbody-row tbody-row">
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="30" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="31" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="1" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="2" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="3" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="4" name="calendar-date">
+                      </label>
+                    </th>
+                    <th class="tbody-row__cell date-cell">
+                      <label class="date-cell__label">
+                        <input class="calendar-date visually-hidden" type="checkbox" value="5" name="calendar-date">
+                      </label>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </fieldset>
+        </div>
+        <button></button>
+      </form>
     </section>
