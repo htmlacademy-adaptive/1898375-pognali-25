@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сервис для поиска попутчиков "Погнали?"</title>
 </head>
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-header__navigation-position main-navigation global-container">
+    <nav class="main-header__navigation main-navigation">
       <a  class="main-header__logo logo primary-text-color" href="#">
         <svg class="logo-icon" aria-hidden="true" focusable="false" width="96" height="15" viewBox="0 0 96 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M94.9113 6.18874C95.6371 5.72747 96 5.01634 96 4.05535C96 2.79967 95.4774 1.81306 94.4322 1.09552C93.4161 0.365174 92.2185 0 90.8394 0C89.4894 0 88.2555 0.397207 87.1378 1.19162C86.0345 1.97322 85.4829 3.01749 85.4829 4.32443C85.4829 4.81133 85.6353 5.21494 85.9402 5.53527C86.245 5.84278 86.6805 5.99654 87.2467 5.99654C87.7983 5.99654 88.2193 5.84278 88.5096 5.53527C88.8144 5.21494 88.9668 4.81133 88.9668 4.32443C88.9378 3.95285 89.0612 3.57486 89.337 3.19047C89.6128 2.79326 90.1136 2.59466 90.8394 2.59466C91.4491 2.60747 91.8846 2.76123 92.1459 3.05593C92.4217 3.35063 92.5451 3.64533 92.5161 3.94003C92.5161 4.14504 92.4435 4.35005 92.2983 4.55506C92.1532 4.76007 92.0008 4.92024 91.8411 5.03556C91.6959 5.15088 91.4564 5.31745 91.1225 5.53527C90.7886 5.75309 90.5564 5.90685 90.4257 5.99654C89.6709 6.54751 89.2935 7.27785 89.2935 8.18758C89.2935 8.63604 89.4531 9.01403 89.7725 9.32155C90.1064 9.61625 90.5491 9.7636 91.1007 9.7636C91.6524 9.7636 92.0878 9.61625 92.4072 9.32155C92.7411 9.01403 92.908 8.63604 92.908 8.18758C92.908 7.99539 92.9443 7.816 93.0169 7.64943C93.0895 7.48286 93.2056 7.32911 93.3653 7.18816C93.5395 7.04722 93.6846 6.9319 93.8008 6.84221C93.9314 6.75252 94.1201 6.6372 94.3669 6.49625C94.6282 6.35531 94.8097 6.2528 94.9113 6.18874Z"/>
@@ -25,8 +26,8 @@
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
-      <div class="main-navigation__primary-wrapper main-menu">
-        <ul class="main-navigation__list site-list">
+      <div class="main-navigation__primary-wrapper">
+        <ul class="main-navigation__site-list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#about-website">
               О сервисе
@@ -46,7 +47,7 @@
             </a>
           </li>
         </ul>
-        <ul class="main-menu__list user-list">
+        <ul class="main-navigation__user-list user-list">
           <li class="user-list__item">
             <a class="user-list__link" href="tel:=88005558628">
               8 800 555-86-28
@@ -66,10 +67,10 @@
             </a>
           </li>
         </ul>
-        <a class="main-menu__link authorization-button primary-style-button" href="#">
+        <a class="main-navigation__authorization authorization-button primary-style-button" href="#">
           Авторизация<span class="visually-hidden">Авторизация в сервисе Погнали.</span>
         </a>
-        <ul class="main-menu__social-list social-list">
+        <ul class="main-navigation__social-list social-list">
           <li class="social-list__item">
             <a class="social-link" href="https://www.facebook.com/htmlacademy">
               <svg class="social-icon" aria-hidden="true" focusable="false" width="11" height="21" viewBox="0 0 11 21" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
@@ -95,6 +96,24 @@
           </li>
         </ul>
       </div>
+      <div class="main-header__table-desktop-buttons table-desktop-buttons">
+        <a class="table-desktop-buttons__phone" href="tel:88005558628">
+          <svg class="phone-icon" aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25901 1.60026L7.25901 5.36066C7.46061 5.48666 7.72141 5.54639 7.98381 5.54639C8.24621 5.54639 8.50701 5.48666 8.70861 5.36066L14.7086 1.60026C15.0998 1.35479 15.4694 0.399994 14.7518 0.399994H1.21661C0.499006 0.399994 0.868606 1.35479 1.25901 1.60026ZM14.8902 3.65639L8.70861 7.41493C8.43661 7.58106 8.24621 7.60066 7.98381 7.60066C7.72141 7.60066 7.53101 7.58106 7.25901 7.41493C6.98701 7.24879 1.55261 3.92519 1.10861 3.65546C0.796606 3.46506 0.799806 3.68813 0.799806 3.85986V10.6667C0.799806 11.0587 1.25261 11.6 1.59981 11.6H14.3998C14.747 11.6 15.1998 11.0587 15.1998 10.6667V3.86079C15.1998 3.68906 15.203 3.46599 14.8902 3.65639Z"/>
+          </svg>
+          <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
+        </a>
+        <a class="table-desktop-buttons__mail" href="mailto:mail@htmlacademy.ru">
+          <svg class="mail-icon" aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25901 1.60026L7.25901 5.36066C7.46061 5.48666 7.72141 5.54639 7.98381 5.54639C8.24621 5.54639 8.50701 5.48666 8.70861 5.36066L14.7086 1.60026C15.0998 1.35479 15.4694 0.399994 14.7518 0.399994H1.21661C0.499006 0.399994 0.868606 1.35479 1.25901 1.60026ZM14.8902 3.65639L8.70861 7.41493C8.43661 7.58106 8.24621 7.60066 7.98381 7.60066C7.72141 7.60066 7.53101 7.58106 7.25901 7.41493C6.98701 7.24879 1.55261 3.92519 1.10861 3.65546C0.796606 3.46506 0.799806 3.68813 0.799806 3.85986V10.6667C0.799806 11.0587 1.25261 11.6 1.59981 11.6H14.3998C14.747 11.6 15.1998 11.0587 15.1998 10.6667V3.86079C15.1998 3.68906 15.203 3.46599 14.8902 3.65639Z"/>
+          </svg>
+          <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
+        </a>
+        <a class="table-desktop-buttons__authorization authorization-button primary-style-button" href="#">
+          Авторизация
+          <span class="visually-hidden">Авторизация в сервисе Погнали.</span>
+        </a>
+      </div>
     </nav>
   </header>
   <main class="main-index">
@@ -102,37 +121,44 @@
 
     <section class="entrance-section">
       <h2 class="visually-hidden">Представление сервиса.</h2>
-      <div class="entrance-section__wrapper global-container">
-        <p class="entrance-section__slogan slogan primary-text-color">В путишествие с крутыми попутчиками!</p>
-        <ul class="entrance-section__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="tel:=88005558628">
-              <svg class="phone-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.97412 7.42388C8.97412 7.61288 9.12775 7.76138 9.3155 7.76138C9.70468 7.76138 10.0187 8.07526 10.0187 8.45663C10.0187 8.64225 10.1724 8.79413 10.3601 8.79413C10.5479 8.79413 10.7015 8.64225 10.7015 8.45663C10.7015 7.70064 10.0802 7.08638 9.3155 7.08638C9.12775 7.08638 8.97412 7.23826 8.97412 7.42388ZM14.5318 8.79413C14.723 8.79413 14.8732 8.64225 14.8732 8.45663C14.8732 5.42589 12.3811 2.96214 9.3155 2.96214C9.12775 2.96214 8.97412 3.114 8.97412 3.29964C8.97412 3.48526 9.12775 3.63714 9.3155 3.63714C12.0056 3.63714 14.1904 5.80051 14.1904 8.45663C14.1904 8.64225 14.344 8.79413 14.5318 8.79413Z"/>
-                <path d="M12.1047 8.45663C12.1047 8.64225 12.2583 8.79413 12.446 8.79413C12.6338 8.79413 12.7874 8.64225 12.7874 8.45663C12.7874 6.56326 11.2307 5.02426 9.3156 5.02426C9.12785 5.02426 8.97422 5.17614 8.97422 5.36176C8.97422 5.55076 9.12785 5.69926 9.3156 5.69926C10.8552 5.69926 12.1047 6.93788 12.1047 8.45663ZM9.3156 0.900002C9.12785 0.900002 8.97422 1.05188 8.97422 1.2375C8.97422 1.42314 9.12785 1.575 9.3156 1.575C13.1561 1.575 16.2797 4.66314 16.2797 8.45663C16.2797 8.64225 16.43 8.79413 16.6211 8.79413C16.8089 8.79413 16.9625 8.64225 16.9625 8.45663C16.9625 4.28852 13.5316 0.900002 9.3156 0.900002ZM12.6509 12.0139L12.2037 12.2535C11.4492 12.6619 10.8621 13.7813 9.93111 12.9375L7.50006 10.5L5.39999 8.45663C4.3449 7.1235 5.5263 6.80625 5.93936 6.05701L6.18174 5.61827C6.45484 5.11875 6.55383 4.55851 6.47191 3.99825C6.3934 3.43801 6.13736 2.92838 5.7277 2.52338C5.2293 2.03064 4.56703 1.76064 3.86037 1.76064C3.15371 1.76064 2.48802 2.03064 1.9896 2.52338L1.81551 2.69888C0.893782 3.61014 0.787955 5.1795 1.51509 7.1235C2.20125 8.97975 3.58385 10.9913 5.39999 12.7868C8.16857 15.5239 11.2512 17.1 13.4634 17.1C14.3373 17.1 15.0781 16.8536 15.6038 16.3339L15.7813 16.1584C16.2763 15.669 16.5528 15.0143 16.5563 14.3089C16.5528 13.6204 16.2695 12.9454 15.7813 12.4628C14.9586 11.6494 13.6716 11.4671 12.6509 12.0139Z"/>
-              </svg>
-              <span class="visually-hidden">Телефон сервиса Погнали.</span>
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="mailto:mail@htmlacademy.ru">
-              <svg class="mail-icon" aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.25901 1.60026L7.25901 5.36066C7.46061 5.48666 7.72141 5.54639 7.98381 5.54639C8.24621 5.54639 8.50701 5.48666 8.70861 5.36066L14.7086 1.60026C15.0998 1.35479 15.4694 0.399994 14.7518 0.399994H1.21661C0.499006 0.399994 0.868606 1.35479 1.25901 1.60026ZM14.8902 3.65639L8.70861 7.41493C8.43661 7.58106 8.24621 7.60066 7.98381 7.60066C7.72141 7.60066 7.53101 7.58106 7.25901 7.41493C6.98701 7.24879 1.55261 3.92519 1.10861 3.65546C0.796606 3.46506 0.799806 3.68813 0.799806 3.85986V10.6667C0.799806 11.0587 1.25261 11.6 1.59981 11.6H14.3998C14.747 11.6 15.1998 11.0587 15.1998 10.6667V3.86079C15.1998 3.68906 15.203 3.46599 14.8902 3.65639Z"/>
-              </svg>
-              <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link authorization-button primary-style-button" href="#">
-              Авторизация
-              <span class="visually-hidden">Авторизация в сервисе Погнали.</span>
-            </a>
-          </li>
-        </ul>
-        <blockquote class="quote common-text">
-          <p class="common-text__light primary-text-color">«Лучшее приложение, что я видел в жизни!»</p>
-          <p class="common-text__bold primary-text-color">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
-        </blockquote>
+      <div class="entrance-section__wrapper">
+        <div class="entrance-section__sub-wrapper">
+          <p class="entrance-section__slogan slogan primary-text-color">В путишествие
+          с крутыми
+          попутчиками!</p>
+          <ul class="entrance-section__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="tel:=88005558628">
+                <svg class="phone-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.97412 7.42388C8.97412 7.61288 9.12775 7.76138 9.3155 7.76138C9.70468 7.76138 10.0187 8.07526 10.0187 8.45663C10.0187 8.64225 10.1724 8.79413 10.3601 8.79413C10.5479 8.79413 10.7015 8.64225 10.7015 8.45663C10.7015 7.70064 10.0802 7.08638 9.3155 7.08638C9.12775 7.08638 8.97412 7.23826 8.97412 7.42388ZM14.5318 8.79413C14.723 8.79413 14.8732 8.64225 14.8732 8.45663C14.8732 5.42589 12.3811 2.96214 9.3155 2.96214C9.12775 2.96214 8.97412 3.114 8.97412 3.29964C8.97412 3.48526 9.12775 3.63714 9.3155 3.63714C12.0056 3.63714 14.1904 5.80051 14.1904 8.45663C14.1904 8.64225 14.344 8.79413 14.5318 8.79413Z"/>
+                  <path d="M12.1047 8.45663C12.1047 8.64225 12.2583 8.79413 12.446 8.79413C12.6338 8.79413 12.7874 8.64225 12.7874 8.45663C12.7874 6.56326 11.2307 5.02426 9.3156 5.02426C9.12785 5.02426 8.97422 5.17614 8.97422 5.36176C8.97422 5.55076 9.12785 5.69926 9.3156 5.69926C10.8552 5.69926 12.1047 6.93788 12.1047 8.45663ZM9.3156 0.900002C9.12785 0.900002 8.97422 1.05188 8.97422 1.2375C8.97422 1.42314 9.12785 1.575 9.3156 1.575C13.1561 1.575 16.2797 4.66314 16.2797 8.45663C16.2797 8.64225 16.43 8.79413 16.6211 8.79413C16.8089 8.79413 16.9625 8.64225 16.9625 8.45663C16.9625 4.28852 13.5316 0.900002 9.3156 0.900002ZM12.6509 12.0139L12.2037 12.2535C11.4492 12.6619 10.8621 13.7813 9.93111 12.9375L7.50006 10.5L5.39999 8.45663C4.3449 7.1235 5.5263 6.80625 5.93936 6.05701L6.18174 5.61827C6.45484 5.11875 6.55383 4.55851 6.47191 3.99825C6.3934 3.43801 6.13736 2.92838 5.7277 2.52338C5.2293 2.03064 4.56703 1.76064 3.86037 1.76064C3.15371 1.76064 2.48802 2.03064 1.9896 2.52338L1.81551 2.69888C0.893782 3.61014 0.787955 5.1795 1.51509 7.1235C2.20125 8.97975 3.58385 10.9913 5.39999 12.7868C8.16857 15.5239 11.2512 17.1 13.4634 17.1C14.3373 17.1 15.0781 16.8536 15.6038 16.3339L15.7813 16.1584C16.2763 15.669 16.5528 15.0143 16.5563 14.3089C16.5528 13.6204 16.2695 12.9454 15.7813 12.4628C14.9586 11.6494 13.6716 11.4671 12.6509 12.0139Z"/>
+                </svg>
+                <span class="visually-hidden">Телефон сервиса Погнали.</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="mailto:mail@htmlacademy.ru">
+                <svg class="mail-icon" aria-hidden="true" focusable="false" width="16" height="12" viewBox="0 0 16 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.25901 1.60026L7.25901 5.36066C7.46061 5.48666 7.72141 5.54639 7.98381 5.54639C8.24621 5.54639 8.50701 5.48666 8.70861 5.36066L14.7086 1.60026C15.0998 1.35479 15.4694 0.399994 14.7518 0.399994H1.21661C0.499006 0.399994 0.868606 1.35479 1.25901 1.60026ZM14.8902 3.65639L8.70861 7.41493C8.43661 7.58106 8.24621 7.60066 7.98381 7.60066C7.72141 7.60066 7.53101 7.58106 7.25901 7.41493C6.98701 7.24879 1.55261 3.92519 1.10861 3.65546C0.796606 3.46506 0.799806 3.68813 0.799806 3.85986V10.6667C0.799806 11.0587 1.25261 11.6 1.59981 11.6H14.3998C14.747 11.6 15.1998 11.0587 15.1998 10.6667V3.86079C15.1998 3.68906 15.203 3.46599 14.8902 3.65639Z"/>
+                </svg>
+                <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link authorization-button primary-style-button" href="#">
+                Авторизация
+                <span class="visually-hidden">Авторизация в сервисе Погнали.</span>
+              </a>
+            </li>
+          </ul>
+          <blockquote class="entrance-section__quote quote common-text">
+            <p class="quote__text common-text__light primary-text-color">«Лучшее приложение,
+            что я видел в жизни!»</p>
+            <p class="quote__autor common-text__bold primary-text-color">Мурат Эльтазин
+            главный редактор
+            газеты «гаджетлайф»</p>
+          </blockquote>
+        </div>
         <ol class="entrance-section__help-list user-steps-list">
           <li class="user-steps-list__item user-steps-list__item-color">
             <span class="second-text-color">Выберите
@@ -159,7 +185,7 @@
     </section>
 
     <section class="main-index__section-border-bottom about-website-section" id="about-website">
-      <div class="about-website-section__wrapper global-container common-text">
+      <div class="about-website-section__wrapper common-text">
         <h2 class="about-website-section__title section-title">О свервисе</h2>
         <p class="section-description common-text__light primary-text-color">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
         <p class="section-description common-text__bold primary-text-color">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
@@ -167,7 +193,7 @@
     </section>
 
     <section class="main-index__section-border-bottom direction-section">
-      <div class="direction-section__wrapper global-container">
+      <div class="direction-section__wrapper">
         <h2 class="direction-section__title section-title">Направления</h2>
         <p class="direction-section__description section-description common-text second-text-color">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
         <ul class="direction-section__list country-list">
@@ -198,7 +224,7 @@
     </section>
 
     <section class="main-index__section-border-bottom companion-section">
-      <div class="companion-section__wrapper global-container common-text">
+      <div class="companion-section__wrapper common-text">
         <h2 class="companion-section__title section-title">Попутчики</h2>
         <p class="companion-section__description section-description common-text__light primary-text-color">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="companion-section__description section-description common-text__bold primary-text-color">Теперь можно легко найти единомышленников!</p>
@@ -218,7 +244,7 @@
     </section>
 
     <section class="main-index__section-border-bottom create-profile-section">
-      <div class="create-profile-section__wrapper global-container">
+      <div class="create-profile-section__wrapper">
         <h2 class="visually-hidden">Тарифы.</h2>
         <h3 class="create-profile-section__title section-title">Добавьте свой профиль</h3>
         <img class="profile-icon" width="100" height="100" src="img/icons/profile-icon.png" alt="Схематичное изображение профиля">
@@ -247,7 +273,7 @@
     </section>
 
     <section class="main-index__section-border-bottom registration-section">
-      <div class="registration-section__wrapper global-container common-text">
+      <div class="registration-section__wrapper common-text">
         <h2 class="visually-hidden">Регистрация на сервисе.</h2>
         <h3 class="registration-section__title section-title">Заинтересовались?</h3>
         <form class="registration-section__form registration-form" action="https://echo.htmlacademy.ru/" method="get" name="registration-form">
@@ -288,7 +314,7 @@
     </section>
 
     <section class="map-section main-index__section-border-bottom">
-      <div class="map-section__wrapper global-container common-text">
+      <div class="map-section__wrapper common-text">
         <h2 class="visually-hidden">Адрес сервиса.</h2>
         <svg class="point-icon" aria-hidden="true" focusable="false" width="17" height="21" viewBox="0 0 17 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.5 0C4.15169 0 0.625 3.52669 0.625 7.875C0.625 12.9334 4.42846 15.1449 5.26923 16.1538C7.28846 18.5769 7.40257 21 8.5 21C9.59743 21 9.71154 18.5769 11.7308 16.1538C12.5715 15.1449 16.375 12.9334 16.375 7.875C16.375 3.52669 12.8483 0 8.5 0ZM8.5 13.125C5.60069 13.125 3.25 10.7743 3.25 7.875C3.25 4.97569 5.60069 2.625 8.5 2.625C11.3993 2.625 13.75 4.97569 13.75 7.875C13.75 10.7743 11.3993 13.125 8.5 13.125ZM8.5 5.25C7.051 5.25 5.875 6.426 5.875 7.875C5.875 9.324 7.051 10.5 8.5 10.5C9.949 10.5 11.125 9.324 11.125 7.875C11.125 6.426 9.949 5.25 8.5 5.25Z"/>
@@ -307,7 +333,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper global-container">
+    <div class="main-footer__wrapper">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
       <a  class="main-footer__logo logo second-text-color" href="#">
         <svg class="logo-icon" aria-hidden="true" focusable="false" width="96" height="15" viewBox="0 0 96 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

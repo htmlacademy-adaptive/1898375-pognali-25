@@ -1,3 +1,47 @@
 .main-navigation__primary-wrapper {
   display: none;
+  width: 320px;
+  background-color: @primary-background-color;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    background-color: @second-background-color;
+  }
+}
+
+.main-navigation__site-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.main-navigation__user-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation__authorization {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-navigation__social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

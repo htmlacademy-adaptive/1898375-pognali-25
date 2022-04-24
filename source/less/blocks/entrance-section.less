@@ -1,14 +1,78 @@
 .entrance-section {
-  background-color: #192144;
+  background-color: @second-background-color;
   background-image: url("../img/background/traveller-illustration.png"), url("../img/background/header-back.png");
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
 }
 
+.entrance-section__wrapper {
+  width: 270px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1320px;
+    padding: 0 60px;
+  }
+}
+
+.entrance-section__sub-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .entrance-section__slogan {
   margin: 0;
+  white-space: pre-line;
+}
+
+.entrance-section__list {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .entrance-section__help-list {
   .mixin-list-normalize ();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 317px);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 297px);
+  }
+}
+
+.entrance-section__quote {
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+  }
 }
