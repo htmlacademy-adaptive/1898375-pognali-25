@@ -1,11 +1,49 @@
 .create-profile-section {
-  background-color: #e6e8f1;
+  background-color: @six-background-color;
+}
+
+.create-profile-section__wrapper {
+  .mixin-phone-container();
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+  }
+}
+
+.create-profile-section__content-wrapper {
+  width: 246px;
+  display: grid;
+  grid-template-areas: "create-profile-section__title create-profile-section__profile-icon" "create-profile-section__choice-list create-profile-section__choice-list" "create-profile-section__show-more create-profile-section__show-more";
+  margin-left: auto;
 }
 
 .create-profile-section__title {
+  display: inline-block;
+  grid-area: create-profile-section__title;
   margin: 0;
+  white-space: pre-line;
+
+  @media (min-width: @tablet-width) {
+    white-space: nowrap;
+    align-self: center;
+  }
+}
+
+.create-profile-section__profile-icon {
+  grid-area: create-profile-section__profile-icon;
 }
 
 .create-profile-section__choice-list {
   .mixin-list-normalize ();
+  grid-area: create-profile-section__choice-list;
+}
+
+.create-profile-section__show-more {
+  grid-area: create-profile-section__show-more;
 }

@@ -3,5 +3,31 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
-  color: #444444;
+  color: @fourth-text-color;
+}
+
+.rate-choice-list__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.rate-choice-list__name {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-right: auto;
+  }
+}
+
+.rate-choice-list__price {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.rate-choice-list__order {
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
 }
