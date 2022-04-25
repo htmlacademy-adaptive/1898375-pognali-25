@@ -116,6 +116,7 @@
       </div>
     </nav>
   </header>
+
   <main class="main-index">
     <h1 class="visually-hidden">Сервис для поиска попутчиков "Погнали?".</h1>
 
@@ -186,54 +187,67 @@
 
     <section class="main-index__section-border-bottom about-website-section" id="about-website">
       <div class="about-website-section__wrapper common-text">
-        <h2 class="about-website-section__title section-title">О свервисе</h2>
-        <p class="section-description common-text__light primary-text-color">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="section-description common-text__bold primary-text-color">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <div class="about-website-section__inner-content-wrapper">
+          <h2 class="about-website-section__title section-title">О свервисе</h2>
+          <p class="section-description common-text__light primary-text-color">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="section-description common-text__bold primary-text-color">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <a class="about-website-section__show-more show-more-button primary-style-button" href="#">
+            Подробнее
+            <span class="visually-hidden">Переход на страницу выбора направления.</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="main-index__section-border-bottom direction-section">
       <div class="direction-section__wrapper">
-        <h2 class="direction-section__title section-title">Направления</h2>
-        <p class="direction-section__description section-description common-text second-text-color">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        <ul class="direction-section__list country-list">
-          <li class="country-list__item country-item card">
-            <h3 class="country-item__title card__title">Таиланд</h3>
-            <p class="country-item__slogan card__slogan">Джунгли зовут!</p>
-            <span class="country-item__counter card__counter">18321</span>
-            <img class="country-item__image card-image" width="270" height="110" src="img/card-images/thailand-card.jpg" alt="Условный пейзаж Таиланда.">
-            <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/thailand-flag.png" alt="Флаг Таиланда.">
-          </li>
-          <li class="country-list__item country-item card">
-            <h3 class="country-item__title card__title">Франция</h3>
-            <p class="country-item__slogan card__slogan">Трэ бьен, манифик!</p>
-            <span class="country-item__counter card__counter">12518</span>
-            <img class="country-item__image card-image" width="270" height="110" src="img/card-images/france-card.jpg" alt="Условный пейзаж Франции.">
-            <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/france-flag.png" alt="Флаг Франции.">
-          </li>
-          <li class="country-list__item country-item card">
-            <h3 class="country-item__title card__title">Чехия</h3>
-            <p class="country-item__slogan card__slogan">Закоулки старой Европы</p>
-            <span class="country-item__counter card__counter">5326</span>
-            <img class="country-item__image card-image" width="270" height="110" src="img/card-images/czech-card.jpg" alt="Условный пейзаж Чехии.">
-            <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/czech-flag.png" alt="Флаг Чехии.">
-          </li>
-        </ul>
-        <a class="direction-section__show-more show-more-button primary-style-button" href="form.html">Показать все<span class="visually-hidden">Переход на страницу выбора направления.</span></a>
+        <div class="direction-section__inner-content-wrapper">
+          <h2 class="direction-section__title section-title">Направления</h2>
+          <p class="direction-section__description section-description common-text second-text-color">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <ul class="direction-section__list country-list">
+            <li class="country-list__item country-item card">
+              <h3 class="country-item__title card__title">Таиланд</h3>
+              <p class="country-item__slogan card__slogan">Джунгли зовут!</p>
+              <span class="country-item__counter card__counter">18321</span>
+              <img class="country-item__image card-image" width="270" height="110" src="img/card-images/thailand-card.jpg" alt="Условный пейзаж Таиланда.">
+              <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/thailand-flag.png" alt="Флаг Таиланда.">
+            </li>
+            <li class="country-list__item country-item card">
+              <h3 class="country-item__title card__title">Франция</h3>
+              <p class="country-item__slogan card__slogan">Трэ бьен, манифик!</p>
+              <span class="country-item__counter card__counter">12518</span>
+              <img class="country-item__image card-image" width="270" height="110" src="img/card-images/france-card.jpg" alt="Условный пейзаж Франции.">
+              <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/france-flag.png" alt="Флаг Франции.">
+            </li>
+            <li class="country-list__item country-item card">
+              <h3 class="country-item__title card__title">Чехия</h3>
+              <p class="country-item__slogan card__slogan">Закоулки старой Европы</p>
+              <span class="country-item__counter card__counter">5326</span>
+              <img class="country-item__image card-image" width="270" height="110" src="img/card-images/czech-card.jpg" alt="Условный пейзаж Чехии.">
+              <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/czech-flag.png" alt="Флаг Чехии.">
+            </li>
+          </ul>
+          <a class="direction-section__show-more show-more-button primary-style-button" href="form.html">
+            Показать все
+            <span class="visually-hidden">Переход на страницу выбора направления.</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="main-index__section-border-bottom companion-section">
       <div class="companion-section__wrapper common-text">
-        <h2 class="companion-section__title section-title">Попутчики</h2>
-        <p class="companion-section__description section-description common-text__light primary-text-color">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companion-section__description section-description common-text__bold primary-text-color">Теперь можно легко найти единомышленников!</p>
+        <div class="companion-section__text-wrapper">
+          <h2 class="companion-section__title section-title">Попутчики</h2>
+          <p class="companion-section__description section-description common-text__light primary-text-color">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="companion-section__description section-description common-text__bold primary-text-color">Теперь можно легко найти единомышленников!</p>
+        </div>
         <ul class="companion-section__list companion-demo-list">
           <li class="companion-demo-list__demo-card-item">
-            <img class="demo-card-image" width="270" height="428" src="../img/demo-images/user-card-tanya.jpg" alt="Демонстрация карточки участника сервиса 99 уровня">
+            <img class="companion-demo-list__demo-card-image" width="270" height="428" src="../img/demo-images/user-card-tanya.png" alt="Демонстрация карточки участника сервиса 99 уровня">
           </li>
           <li class="companion-demo-list__demo-card-item">
-            <img class="demo-card-image" width="270" height="428" src="../img/demo-images/user-card-petya.jpg" alt="Демонстрация карточки участника сервиса 80 уровня">
+            <img class="demo-card-image" width="270" height="428" src="../img/demo-images/user-card-petya.png" alt="Демонстрация карточки участника сервиса 80 уровня">
           </li>
         </ul>
         <a class="companion-section__show-more show-more-button primary-style-button" href="catalog.html">

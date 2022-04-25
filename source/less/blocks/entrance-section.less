@@ -6,20 +6,17 @@
 }
 
 .entrance-section__wrapper {
-  width: 270px;
-  padding: 0 25px;
+  .mixin-phone-container();
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    width: 688px;
-    padding: 0 40px;
+    .mixin-table-container();
   }
 
   @media (min-width: @desktop-width) {
-    width: 1320px;
-    padding: 0 60px;
+    .mixin-desktop-container();
   }
 }
 
@@ -68,6 +65,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 297px);
+    align-self: center;
   }
 }
 

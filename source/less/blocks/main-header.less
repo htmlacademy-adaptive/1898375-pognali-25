@@ -1,11 +1,15 @@
 .main-header {
-  width: 270px;
-  padding: 0 25px;
   background-color: @second-background-color;
+}
+
+.main-header__navigation {
+  .mixin-phone-container();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    width: 688px;
-    padding: 0 40px;
+    .mixin-table-container();
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,16 +17,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1320px;
-    padding: 0 60px;
+    .mixin-desktop-container();
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-
-.main-header__navigation {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
