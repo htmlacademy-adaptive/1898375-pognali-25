@@ -7,27 +7,22 @@
 }
 
 .rate-choice-list__item {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
 }
 
-.rate-choice-list__name {
+.rate-choice-list__item-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
     order: 2;
-    margin-right: auto;
-  }
-}
-
-.rate-choice-list__price {
-  @media (min-width: @tablet-width) {
-    order: 3;
+    flex-direction: row;
   }
 }
 
 .rate-choice-list__order {
   @media (min-width: @tablet-width) {
-    order: 0;
+    order: 1;
   }
 }

@@ -4,11 +4,13 @@
 
 .create-profile-section__wrapper {
   .mixin-phone-container();
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
-    display: flex;
-    flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,8 +22,16 @@
   width: 246px;
   display: grid;
   grid-template-areas: "create-profile-section__title create-profile-section__profile-icon" "create-profile-section__choice-list create-profile-section__choice-list" "create-profile-section__show-more create-profile-section__show-more";
-  margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1177px;
+  }
 }
+
 
 .create-profile-section__title {
   display: inline-block;
