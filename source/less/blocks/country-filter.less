@@ -1,13 +1,25 @@
-.country-filter {
-  background-color: #e2e5f2;
-}
-
 .country-filter__primary-list {
   .mixin-list-normalize();
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .country-filter__alphabet-list {
   .mixin-list-normalize();
   display: grid;
   grid-template-columns: repeat(5, 43px);
+  grid-template-rows: repeat(5, 40px);
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
 }

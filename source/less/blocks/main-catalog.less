@@ -1,3 +1,39 @@
 .main-catalog {
-  background-color: #edeff6;
+  background-color: @third-background-color;
+}
+
+.main-catalog__header-wrapper {
+  .mixin-phone-container();
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+  }
+}
+
+.main-catalog__header-return-button {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.main-catalog__desktop-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 1321px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.main-catalog__companion-filters {
+  order: 2;
 }

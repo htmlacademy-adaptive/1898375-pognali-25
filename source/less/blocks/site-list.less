@@ -1,0 +1,21 @@
+.site-list__link {
+  .mixin-font-family-normal();
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: @nine-text-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @primary-text-color;
+  }
+}
