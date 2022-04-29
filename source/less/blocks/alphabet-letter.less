@@ -6,5 +6,12 @@
   color: #1d2e5b;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: @primary-background-color;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    background-color: @seven-background-color;
+  }
 }

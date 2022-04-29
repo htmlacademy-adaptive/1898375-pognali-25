@@ -1,7 +1,31 @@
 .plan-constructor-section {
-  background-color: #d4d9eb;
+  background-color: @twelve-background-color;
 }
 
-.constructor-form__fieldset {
-  background-color: #ffffff;
+.plan-constructor-section__wrapper {
+  .mixin-phone-container();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+  }
+}
+
+.plan-constructor-section__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-constructor-section__pagination {
+  .mixin-list-normalize();
+  display: flex;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }

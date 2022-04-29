@@ -2,6 +2,28 @@
   background-color: #192144;
 }
 
+.registration-section__wrapper {
+  .mixin-phone-container();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+  }
+}
+
 .registration-section__list {
   .mixin-list-normalize ();
+  align-self: flex-start;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-self: center;
+  }
 }
+

@@ -1,3 +1,29 @@
 .main-header {
-  background-color: #192144;
+  background-color: @second-background-color;
+}
+
+.main-header__navigation {
+  .mixin-phone-container();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.main-header__table-desktop-buttons {
+  display: flex;
 }

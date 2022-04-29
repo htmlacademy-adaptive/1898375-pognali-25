@@ -1,8 +1,67 @@
 .profile-section {
-  background-color: rgba(203, 206, 217, 0.3);
+  background-color: @third-background-color;
+}
+
+.profile-section__wrapper {
+  .mixin-phone-container();
+  display: grid;
+  grid-template-areas:
+    "profile-section__level-wrapper profile-section__avatar"
+    "profile-section__change-avatar profile-section__change-avatar"
+    "profile-section__tags-wrapper profile-section__tags-wrapper"
+    "profile-section__icons-wrapper profile-section__icons-wrapper";
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+    grid-template-areas:
+      "profile-section__level-wrapper profile-section__icons-wrapper profile-section__avatar"
+      "profile-section__change-avatar profile-section__change-avatar profile-section__change-avatar"
+      "profile-section__tags-wrapper profile-section__tags-wrapper profile-section__tags-wrapper";
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+    grid-template-areas:
+      ". profile-section__change-avatar"
+      "profile-section__tags-wrapper profile-section__icons-wrapper";
+  }
+}
+
+.profile-section__level-wrapper {
+  grid-area: profile-section__level-wrapper;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.profile-section__avatar {
+  border-radius: 50%;
+  grid-area: profile-section__avatar;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.profile-section__change-avatar {
+  grid-area: profile-section__change-avatar;
+}
+
+.profile-section__tags-wrapper {
+  grid-area: profile-section__tags-wrapper;
 }
 
 .profile-section__tag-cloud {
   resize: none;
-  background-color: rgba(203, 206, 217, 0.1);
+  background-color: @third-background-color;
+}
+
+.profile-section__icons-wrapper {
+  grid-area: profile-section__icons-wrapper;
+}
+
+.profile-section__icons-list {
+  .mixin-list-normalize();
+  display: flex;
 }

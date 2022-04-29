@@ -1,3 +1,22 @@
 .user-plan-section {
-  background-color: #dfe3f0;
+  background-color: @eleven-background-color;
+}
+
+.user-plan-section__wrapper {
+  .mixin-phone-container();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    .mixin-table-container();
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin-desktop-container();
+  }
+}
+
+.user-plan-section__list {
+  .mixin-list-normalize();
 }

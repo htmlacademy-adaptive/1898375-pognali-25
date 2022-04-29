@@ -6,9 +6,33 @@
   color: #444444;
 }
 
-.calendar-body__week-list,
+.calendar-body__week-list {
+  .mixin-list-normalize();
+  display: grid;
+  grid-template-columns: repeat(7, 33px);
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(7, 78px);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(7, 144px);
+  }
+}
+
 .calendar-body__day-list {
   .mixin-list-normalize();
   display: grid;
   grid-template-columns: repeat(7, 33px);
+  grid-template-rows: repeat(6, 32px);
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(7, 78px);
+    grid-template-rows: repeat(6, 69px);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(7, 144px);
+    grid-template-rows: repeat(6, 72px);
+  }
 }

@@ -1,0 +1,19 @@
+.pagination-link {
+  .mixin-font-family-normal();
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: @sub-ten-text-color;
+}
+
+.pagination-link--current {
+  color: @ten-text-color;
+}
+
+.pagination-link__descriptions {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
