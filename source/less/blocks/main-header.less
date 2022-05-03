@@ -1,12 +1,13 @@
 .main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: @second-background-color;
 }
 
 .main-header__navigation {
   .mixin-phone-container();
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  min-height: 73px;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
