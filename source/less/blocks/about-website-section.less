@@ -1,8 +1,10 @@
 .about-website-section {
+  padding-top: 33px;
+  padding-bottom: 82px;
   background-color: @second-background-color;
-  background-image: url("../img/background/service-example-image.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../img/background/service-example-image.png"), url("../img/background/companion-black-square.png");
+  background-position: center, top left;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .about-website-section__wrapper {
@@ -30,6 +32,20 @@
   @media (min-width: @desktop-width) {
     width: 619px;
   }
+}
+
+.about-website-section__title {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.about-website-section__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-website-section__sub-description {
+  margin: 0;
 }
 
 .about-website-section__show-more {

@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
@@ -20,8 +21,13 @@
 
 .create-profile-section__content-wrapper {
   width: 246px;
+  margin-top: 37px;
   display: grid;
-  grid-template-areas: "create-profile-section__title create-profile-section__profile-icon" "create-profile-section__choice-list create-profile-section__choice-list" "create-profile-section__show-more create-profile-section__show-more";
+  row-gap: 31px;
+  grid-template-areas:
+    "create-profile-section__title create-profile-section__profile-icon"
+    "create-profile-section__choice-list create-profile-section__choice-list"
+    "create-profile-section__show-more create-profile-section__show-more";
 
   @media (min-width: @tablet-width) {
     width: 688px;
@@ -46,6 +52,7 @@
 }
 
 .create-profile-section__profile-icon {
+  margin-left: auto;
   grid-area: create-profile-section__profile-icon;
 }
 

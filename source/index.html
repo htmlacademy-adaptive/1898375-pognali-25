@@ -7,8 +7,8 @@
   <title>Сервис для поиска попутчиков "Погнали?"</title>
 </head>
 <body class="page__body site-body">
-  <header class="main-header site-body__header">
-    <nav class="main-header__navigation main-navigation main-navigation--closed">
+  <header class="site-body__header main-header site-body__header">
+    <nav class="main-header__navigation main-navigation main-navigation--opened main-navigation--nojs">
       <a  class="main-navigation__logo logo primary-text-color" href="#">
         <svg class="logo-icon" aria-hidden="true" focusable="false" width="96" height="15" viewBox="0 0 96 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M94.9113 6.18874C95.6371 5.72747 96 5.01634 96 4.05535C96 2.79967 95.4774 1.81306 94.4322 1.09552C93.4161 0.365174 92.2185 0 90.8394 0C89.4894 0 88.2555 0.397207 87.1378 1.19162C86.0345 1.97322 85.4829 3.01749 85.4829 4.32443C85.4829 4.81133 85.6353 5.21494 85.9402 5.53527C86.245 5.84278 86.6805 5.99654 87.2467 5.99654C87.7983 5.99654 88.2193 5.84278 88.5096 5.53527C88.8144 5.21494 88.9668 4.81133 88.9668 4.32443C88.9378 3.95285 89.0612 3.57486 89.337 3.19047C89.6128 2.79326 90.1136 2.59466 90.8394 2.59466C91.4491 2.60747 91.8846 2.76123 92.1459 3.05593C92.4217 3.35063 92.5451 3.64533 92.5161 3.94003C92.5161 4.14504 92.4435 4.35005 92.2983 4.55506C92.1532 4.76007 92.0008 4.92024 91.8411 5.03556C91.6959 5.15088 91.4564 5.31745 91.1225 5.53527C90.7886 5.75309 90.5564 5.90685 90.4257 5.99654C89.6709 6.54751 89.2935 7.27785 89.2935 8.18758C89.2935 8.63604 89.4531 9.01403 89.7725 9.32155C90.1064 9.61625 90.5491 9.7636 91.1007 9.7636C91.6524 9.7636 92.0878 9.61625 92.4072 9.32155C92.7411 9.01403 92.908 8.63604 92.908 8.18758C92.908 7.99539 92.9443 7.816 93.0169 7.64943C93.0895 7.48286 93.2056 7.32911 93.3653 7.18816C93.5395 7.04722 93.6846 6.9319 93.8008 6.84221C93.9314 6.75252 94.1201 6.6372 94.3669 6.49625C94.6282 6.35531 94.8097 6.2528 94.9113 6.18874Z"/>
@@ -27,74 +27,80 @@
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="main-navigation__primary-wrapper">
-        <ul class="main-navigation__site-list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#about-website">
-              О сервисе
-              <span class="visually-hidden">Показать раздел "О сервисе".</span>
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Направления
-              <span class="visually-hidden">Переход на страницу с выбором направлений.</span>
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Попутчики
-              <span class="visually-hidden">Переход на страницу с выбором попутчиков.</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="main-navigation__user-list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list-link" href="tel:=88005558628">
-              <svg class="second-phone-icon" aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z"/>
-              </svg>
-              <span class="user-list-link__text-color">8 800 555-86-28</span>
-              <span class="visually-hidden">Телефон сервиса Погнали.</span>
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list-link" href="mailto:mail@htmlacademy.ru">
-              <svg class="second-mail-icon" aria-hidden="true" focusable="false" width="19" height="13" viewBox="0 0 19 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z"/>
-              </svg>
-              <span class="user-list-link__text-color">mail@htmlacademy.ru</span>
-              <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
-            </a>
-          </li>
-        </ul>
-        <a class="main-navigation__authorization authorization-button primary-style-button" href="#">
-          Авторизация<span class="visually-hidden">Авторизация в сервисе Погнали.</span>
-        </a>
-        <ul class="main-navigation__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-link" href="https://www.facebook.com/htmlacademy">
-              <svg class="social-icon" aria-hidden="true" focusable="false" width="11" height="21" viewBox="0 0 11 21" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.48786 20.8125H2.12929V11.1375H0V6.3525H2.06643C1.90929 4.185 2.30214 2.6025 3.26071 1.5225C3.71777 1.04316 4.27461 0.66015 4.89562 0.397985C5.51662 0.13582 6.18812 0.000268301 6.86714 0L10.6229 0V4.6125H7.66857C7.49452 5.1766 7.42799 5.76595 7.47214 6.3525H10.615V11.1375H7.47214L7.48786 20.8125ZM3.31571 19.6875H6.28571V10.0125H9.42857V7.5H6.28571V6.93C6.28571 5.43 6.28571 4.0875 7.07143 3.585L7.22071 3.4875H9.42857V1.125H6.89857C6.38444 1.11866 5.87465 1.21553 5.40225 1.40933C4.92986 1.60314 4.50541 1.88955 4.15643 2.25C3.37071 3.1725 3.04857 4.7175 3.29214 6.855L3.37071 7.4775H1.17857V10.0125H3.31571V19.6875Z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
-              <svg class="social-icon" aria-hidden="true" focusable="false"  width="23" height="12" viewBox="0 0 23 12" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.7664 11.8331C17.219 11.8207 16.6854 11.6573 16.2232 11.3606C15.7407 11.031 15.2975 10.6459 14.9026 10.2131C14.5761 9.88315 14.0345 9.32815 13.8268 9.32815C13.619 9.32815 13.4706 10.0181 13.478 10.5056C13.4812 10.8422 13.3564 11.167 13.1293 11.4131C12.8712 11.6263 12.5561 11.7569 12.2242 11.7881H10.7997C8.75222 11.7426 6.79178 10.9425 5.28708 9.53815C2.55676 7.01065 0.21224 2.18065 0.115789 1.97065C0.0237889 1.79521 -0.0147389 1.59616 0.00506792 1.3986C0.0248747 1.20105 0.102128 1.01386 0.227079 0.860649C0.509857 0.622256 0.867951 0.494496 1.23611 0.500649H4.26321H4.35224C4.6027 0.537588 4.84277 0.626997 5.05708 0.763149C5.25875 0.899848 5.42022 1.08899 5.5245 1.31065C5.8444 2.00295 6.2113 2.67204 6.62256 3.31315C7.5945 4.81315 8.02482 5.15815 8.18063 5.23315C8.35396 4.52985 8.40169 3.80091 8.3216 3.08065C8.3476 2.7526 8.29412 2.4231 8.16579 2.12065C8.00289 1.98893 7.80288 1.91278 7.5945 1.90315L7.05289 1.38565C6.94901 0.890649 7.49063 0.463149 7.86902 0.298149C8.62414 0.0589723 9.41638 -0.0376377 10.2061 0.013149H10.7329C11.2686 -0.000953053 11.8041 0.0494006 12.328 0.163149C13.5893 0.433149 13.5448 1.46065 13.4929 2.64565C13.4929 2.99065 13.4558 3.39565 13.4558 3.86065C13.4558 3.97315 13.4558 4.09315 13.4558 4.22065C13.4266 4.54717 13.4492 4.87631 13.5226 5.19565C14.1402 4.67331 14.6604 4.04337 15.0584 3.33565C15.4879 2.66645 15.865 1.96431 16.1861 1.23565V1.23565C16.2839 1.00519 16.4516 0.812043 16.6649 0.684009C16.8782 0.555974 17.1262 0.499653 17.3732 0.523149H20.5487C20.6425 0.514104 20.7369 0.514104 20.8306 0.523149C21.5726 0.523149 22.0103 0.740649 22.1884 1.16065C22.3664 1.58065 22.3145 2.40565 20.4374 4.61815L19.6955 5.46565C19.336 5.81847 19.0264 6.21976 18.7755 6.65815C19.0565 6.98108 19.3754 7.2682 19.7251 7.51315C20.5778 8.16264 21.3283 8.93895 21.951 9.81565C22.097 9.98613 22.1925 10.1948 22.2266 10.4176C22.2608 10.6405 22.2321 10.8685 22.1439 11.0756C21.9884 11.3051 21.7803 11.4931 21.5375 11.6237C21.2946 11.7542 21.0241 11.8235 20.749 11.8256L17.9371 11.8631L17.7664 11.8331ZM13.8268 8.20315C14.4945 8.20315 15.0732 8.79565 15.689 9.41815C16.0217 9.78534 16.3951 10.1125 16.8019 10.3931C17.1096 10.6 17.4711 10.7096 17.8406 10.7081H17.9148L20.7342 10.6706C20.8732 10.6626 21.0094 10.6269 21.1348 10.5656L21.0606 10.4456C20.499 9.67196 19.8292 8.98479 19.0722 8.40565C18.1893 7.65565 17.7368 7.30315 17.6848 6.72565C17.6329 6.14815 18.0484 5.64565 18.8793 4.69315L19.6213 3.86065C20.2477 3.21479 20.7618 2.46681 21.1422 1.64815C20.9767 1.63823 20.8107 1.63823 20.6451 1.64815H17.4029C17.3443 1.6349 17.2835 1.6349 17.2248 1.64815C16.8814 2.44423 16.4719 3.20947 16.0006 3.93565C14.5984 6.05065 13.938 6.33565 13.4706 6.33565C13.3257 6.33565 13.183 6.29959 13.0551 6.23065C12.3132 5.80315 12.3132 4.85065 12.3577 4.16065C12.3577 4.04815 12.3577 3.93565 12.3577 3.83815C12.3577 3.35065 12.3577 2.93065 12.3948 2.57065C12.4542 1.31065 12.3948 1.30315 12.1129 1.23565C11.6586 1.14491 11.1958 1.10467 10.7329 1.11565H10.221C9.74988 1.10581 9.27872 1.13088 8.81127 1.19065C8.88207 1.24338 8.94459 1.30659 8.99676 1.37815C9.30278 1.8659 9.4554 2.43595 9.4345 3.01315C9.53095 4.25065 9.47901 5.86315 8.69256 6.25315C8.5533 6.31903 8.40115 6.35235 8.2474 6.35065C7.5574 6.35065 6.87482 5.69065 5.70998 3.90565C5.26298 3.22218 4.86383 2.50794 4.51547 1.76815L4.45611 1.69315C4.38118 1.65454 4.30126 1.62677 4.21869 1.61065H1.25095H1.19901C1.63676 2.52565 3.71418 6.57565 6.03643 8.69815C7.34044 9.90918 9.02994 10.6088 10.7997 10.6706H12.1722C12.2422 10.6555 12.3097 10.6303 12.3726 10.5956C12.3726 10.5956 12.3726 10.5956 12.3726 10.5281C12.3726 10.3256 12.3726 8.57815 13.5448 8.27815C13.6356 8.24202 13.7302 8.21685 13.8268 8.20315V8.20315Z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-link" href="https://www.instagram.com/htmlacademy/">
-              <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9602 1.80064C13.8189 1.80254 14.6419 2.14451 15.2491 2.75172C15.8563 3.35892 16.1983 4.18192 16.2002 5.04064V12.9606C16.1983 13.8194 15.8563 14.6424 15.2491 15.2496C14.6419 15.8568 13.8189 16.1987 12.9602 16.2006H5.04015C4.18269 16.1968 3.36153 15.854 2.75588 15.247C2.15022 14.64 1.80925 13.8181 1.80735 12.9606V5.04064C1.80925 4.18317 2.15022 3.36125 2.75588 2.75425C3.36153 2.14725 4.18269 1.80444 5.04015 1.80064H12.9602ZM12.9602 0.720642H5.04015C3.89442 0.720642 2.79561 1.17578 1.98545 1.98594C1.1753 2.7961 0.720154 3.89491 0.720154 5.04064L0.720154 12.9606C0.720154 14.1064 1.1753 15.2052 1.98545 16.0153C2.79561 16.8255 3.89442 17.2806 5.04015 17.2806H12.9602C14.1059 17.2806 15.2047 16.8255 16.0149 16.0153C16.825 15.2052 17.2802 14.1064 17.2802 12.9606V5.04064C17.2802 3.89491 16.825 2.7961 16.0149 1.98594C15.2047 1.17578 14.1059 0.720642 12.9602 0.720642V0.720642Z"/>
-                <path d="M9.00697 5.81731C9.63781 5.81731 10.2545 6.00438 10.779 6.35486C11.3035 6.70533 11.7124 7.20348 11.9538 7.7863C12.1952 8.36913 12.2584 9.01045 12.1353 9.62917C12.0122 10.2479 11.7084 10.8162 11.2624 11.2623C10.8163 11.7084 10.248 12.0122 9.62923 12.1352C9.01051 12.2583 8.36918 12.1951 7.78636 11.9537C7.20354 11.7123 6.70539 11.3035 6.35491 10.779C6.00443 10.2544 5.81737 9.63776 5.81737 9.00691C5.81642 8.58778 5.89827 8.17259 6.05823 7.78518C6.21818 7.39777 6.45309 7.04578 6.74946 6.74941C7.04583 6.45304 7.39783 6.21813 7.78524 6.05817C8.17265 5.89822 8.58784 5.81636 9.00697 5.81731V5.81731ZM9.00697 4.73731C8.16222 4.73589 7.33603 4.98508 6.63295 5.45337C5.92987 5.92165 5.3815 6.58797 5.05724 7.36801C4.73298 8.14805 4.6474 9.00675 4.81133 9.83545C4.97526 10.6641 5.38133 11.4256 5.97816 12.0234C6.57498 12.6213 7.33574 13.0286 8.16416 13.1939C8.99258 13.3593 9.85142 13.2751 10.632 12.9522C11.4126 12.6292 12.0798 12.082 12.5493 11.3797C13.0188 10.6774 13.2694 9.85167 13.2694 9.00691C13.2703 8.44656 13.1608 7.89152 12.947 7.37355C12.7332 6.85558 12.4194 6.38485 12.0235 5.98828C11.6276 5.59172 11.1574 5.27711 10.6398 5.06245C10.1222 4.8478 9.56732 4.73731 9.00697 4.73731Z"/>
-                <path d="M13.4282 5.55939C13.9611 5.55939 14.393 5.12744 14.393 4.59459C14.393 4.06175 13.9611 3.62979 13.4282 3.62979C12.8954 3.62979 12.4634 4.06175 12.4634 4.59459C12.4634 5.12744 12.8954 5.55939 13.4282 5.55939Z"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="main-navigation__menu-container">
+          <ul class="main-navigation__site-list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#about-website">
+                О сервисе
+                <span class="visually-hidden">Показать раздел "О сервисе".</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Направления
+                <span class="visually-hidden">Переход на страницу с выбором направлений.</span>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Попутчики
+                <span class="visually-hidden">Переход на страницу с выбором попутчиков.</span>
+              </a>
+            </li>
+          </ul>
+          <a class="main-navigation__authorization authorization-button primary-style-button" href="#">
+            Авторизация<span class="visually-hidden">Авторизация в сервисе Погнали.</span>
+          </a>
+          <ul class="main-navigation__user-list second-user-list">
+            <li class="second-user-list__item">
+              <a class="second-user-list__link user-list-link" href="tel:=88005558628">
+                <span class="second-user-list__icon">
+                  <svg class="second-phone-icon" aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z"/>
+                  </svg>
+                </span>
+                <span class="user-list-link__text-color">8 800 555-86-28</span>
+                <span class="visually-hidden">Телефон сервиса Погнали.</span>
+              </a>
+            </li>
+            <li class="second-user-list__item">
+              <a class="second-user-list__link user-list-link" href="mailto:mail@htmlacademy.ru">
+                <span class="second-user-list__icon">
+                  <svg class="second-mail-icon" aria-hidden="true" focusable="false" width="19" height="13" viewBox="0 0 19 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z"/>
+                  </svg>
+                </span>
+                <span class="user-list-link__text-color">mail@htmlacademy.ru</span>
+                <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-navigation__social-list menu-social-list">
+            <li class="menu-social-list__item">
+              <a class="menu-social-list__link" href="https://www.facebook.com/htmlacademy">
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="11" height="21" viewBox="0 0 11 21" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.48786 20.8125H2.12929V11.1375H0V6.3525H2.06643C1.90929 4.185 2.30214 2.6025 3.26071 1.5225C3.71777 1.04316 4.27461 0.66015 4.89562 0.397985C5.51662 0.13582 6.18812 0.000268301 6.86714 0L10.6229 0V4.6125H7.66857C7.49452 5.1766 7.42799 5.76595 7.47214 6.3525H10.615V11.1375H7.47214L7.48786 20.8125ZM3.31571 19.6875H6.28571V10.0125H9.42857V7.5H6.28571V6.93C6.28571 5.43 6.28571 4.0875 7.07143 3.585L7.22071 3.4875H9.42857V1.125H6.89857C6.38444 1.11866 5.87465 1.21553 5.40225 1.40933C4.92986 1.60314 4.50541 1.88955 4.15643 2.25C3.37071 3.1725 3.04857 4.7175 3.29214 6.855L3.37071 7.4775H1.17857V10.0125H3.31571V19.6875Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-list__item">
+              <a class="menu-social-list__link" href="https://vk.com/htmlacademy">
+                <svg class="social-icon" aria-hidden="true" focusable="false"  width="23" height="12" viewBox="0 0 23 12" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.7664 11.8331C17.219 11.8207 16.6854 11.6573 16.2232 11.3606C15.7407 11.031 15.2975 10.6459 14.9026 10.2131C14.5761 9.88315 14.0345 9.32815 13.8268 9.32815C13.619 9.32815 13.4706 10.0181 13.478 10.5056C13.4812 10.8422 13.3564 11.167 13.1293 11.4131C12.8712 11.6263 12.5561 11.7569 12.2242 11.7881H10.7997C8.75222 11.7426 6.79178 10.9425 5.28708 9.53815C2.55676 7.01065 0.21224 2.18065 0.115789 1.97065C0.0237889 1.79521 -0.0147389 1.59616 0.00506792 1.3986C0.0248747 1.20105 0.102128 1.01386 0.227079 0.860649C0.509857 0.622256 0.867951 0.494496 1.23611 0.500649H4.26321H4.35224C4.6027 0.537588 4.84277 0.626997 5.05708 0.763149C5.25875 0.899848 5.42022 1.08899 5.5245 1.31065C5.8444 2.00295 6.2113 2.67204 6.62256 3.31315C7.5945 4.81315 8.02482 5.15815 8.18063 5.23315C8.35396 4.52985 8.40169 3.80091 8.3216 3.08065C8.3476 2.7526 8.29412 2.4231 8.16579 2.12065C8.00289 1.98893 7.80288 1.91278 7.5945 1.90315L7.05289 1.38565C6.94901 0.890649 7.49063 0.463149 7.86902 0.298149C8.62414 0.0589723 9.41638 -0.0376377 10.2061 0.013149H10.7329C11.2686 -0.000953053 11.8041 0.0494006 12.328 0.163149C13.5893 0.433149 13.5448 1.46065 13.4929 2.64565C13.4929 2.99065 13.4558 3.39565 13.4558 3.86065C13.4558 3.97315 13.4558 4.09315 13.4558 4.22065C13.4266 4.54717 13.4492 4.87631 13.5226 5.19565C14.1402 4.67331 14.6604 4.04337 15.0584 3.33565C15.4879 2.66645 15.865 1.96431 16.1861 1.23565V1.23565C16.2839 1.00519 16.4516 0.812043 16.6649 0.684009C16.8782 0.555974 17.1262 0.499653 17.3732 0.523149H20.5487C20.6425 0.514104 20.7369 0.514104 20.8306 0.523149C21.5726 0.523149 22.0103 0.740649 22.1884 1.16065C22.3664 1.58065 22.3145 2.40565 20.4374 4.61815L19.6955 5.46565C19.336 5.81847 19.0264 6.21976 18.7755 6.65815C19.0565 6.98108 19.3754 7.2682 19.7251 7.51315C20.5778 8.16264 21.3283 8.93895 21.951 9.81565C22.097 9.98613 22.1925 10.1948 22.2266 10.4176C22.2608 10.6405 22.2321 10.8685 22.1439 11.0756C21.9884 11.3051 21.7803 11.4931 21.5375 11.6237C21.2946 11.7542 21.0241 11.8235 20.749 11.8256L17.9371 11.8631L17.7664 11.8331ZM13.8268 8.20315C14.4945 8.20315 15.0732 8.79565 15.689 9.41815C16.0217 9.78534 16.3951 10.1125 16.8019 10.3931C17.1096 10.6 17.4711 10.7096 17.8406 10.7081H17.9148L20.7342 10.6706C20.8732 10.6626 21.0094 10.6269 21.1348 10.5656L21.0606 10.4456C20.499 9.67196 19.8292 8.98479 19.0722 8.40565C18.1893 7.65565 17.7368 7.30315 17.6848 6.72565C17.6329 6.14815 18.0484 5.64565 18.8793 4.69315L19.6213 3.86065C20.2477 3.21479 20.7618 2.46681 21.1422 1.64815C20.9767 1.63823 20.8107 1.63823 20.6451 1.64815H17.4029C17.3443 1.6349 17.2835 1.6349 17.2248 1.64815C16.8814 2.44423 16.4719 3.20947 16.0006 3.93565C14.5984 6.05065 13.938 6.33565 13.4706 6.33565C13.3257 6.33565 13.183 6.29959 13.0551 6.23065C12.3132 5.80315 12.3132 4.85065 12.3577 4.16065C12.3577 4.04815 12.3577 3.93565 12.3577 3.83815C12.3577 3.35065 12.3577 2.93065 12.3948 2.57065C12.4542 1.31065 12.3948 1.30315 12.1129 1.23565C11.6586 1.14491 11.1958 1.10467 10.7329 1.11565H10.221C9.74988 1.10581 9.27872 1.13088 8.81127 1.19065C8.88207 1.24338 8.94459 1.30659 8.99676 1.37815C9.30278 1.8659 9.4554 2.43595 9.4345 3.01315C9.53095 4.25065 9.47901 5.86315 8.69256 6.25315C8.5533 6.31903 8.40115 6.35235 8.2474 6.35065C7.5574 6.35065 6.87482 5.69065 5.70998 3.90565C5.26298 3.22218 4.86383 2.50794 4.51547 1.76815L4.45611 1.69315C4.38118 1.65454 4.30126 1.62677 4.21869 1.61065H1.25095H1.19901C1.63676 2.52565 3.71418 6.57565 6.03643 8.69815C7.34044 9.90918 9.02994 10.6088 10.7997 10.6706H12.1722C12.2422 10.6555 12.3097 10.6303 12.3726 10.5956C12.3726 10.5956 12.3726 10.5956 12.3726 10.5281C12.3726 10.3256 12.3726 8.57815 13.5448 8.27815C13.6356 8.24202 13.7302 8.21685 13.8268 8.20315V8.20315Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-list__item">
+              <a class="menu-social-list__link" href="https://www.instagram.com/htmlacademy/">
+                <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9602 1.80064C13.8189 1.80254 14.6419 2.14451 15.2491 2.75172C15.8563 3.35892 16.1983 4.18192 16.2002 5.04064V12.9606C16.1983 13.8194 15.8563 14.6424 15.2491 15.2496C14.6419 15.8568 13.8189 16.1987 12.9602 16.2006H5.04015C4.18269 16.1968 3.36153 15.854 2.75588 15.247C2.15022 14.64 1.80925 13.8181 1.80735 12.9606V5.04064C1.80925 4.18317 2.15022 3.36125 2.75588 2.75425C3.36153 2.14725 4.18269 1.80444 5.04015 1.80064H12.9602ZM12.9602 0.720642H5.04015C3.89442 0.720642 2.79561 1.17578 1.98545 1.98594C1.1753 2.7961 0.720154 3.89491 0.720154 5.04064L0.720154 12.9606C0.720154 14.1064 1.1753 15.2052 1.98545 16.0153C2.79561 16.8255 3.89442 17.2806 5.04015 17.2806H12.9602C14.1059 17.2806 15.2047 16.8255 16.0149 16.0153C16.825 15.2052 17.2802 14.1064 17.2802 12.9606V5.04064C17.2802 3.89491 16.825 2.7961 16.0149 1.98594C15.2047 1.17578 14.1059 0.720642 12.9602 0.720642V0.720642Z"/>
+                  <path d="M9.00697 5.81731C9.63781 5.81731 10.2545 6.00438 10.779 6.35486C11.3035 6.70533 11.7124 7.20348 11.9538 7.7863C12.1952 8.36913 12.2584 9.01045 12.1353 9.62917C12.0122 10.2479 11.7084 10.8162 11.2624 11.2623C10.8163 11.7084 10.248 12.0122 9.62923 12.1352C9.01051 12.2583 8.36918 12.1951 7.78636 11.9537C7.20354 11.7123 6.70539 11.3035 6.35491 10.779C6.00443 10.2544 5.81737 9.63776 5.81737 9.00691C5.81642 8.58778 5.89827 8.17259 6.05823 7.78518C6.21818 7.39777 6.45309 7.04578 6.74946 6.74941C7.04583 6.45304 7.39783 6.21813 7.78524 6.05817C8.17265 5.89822 8.58784 5.81636 9.00697 5.81731V5.81731ZM9.00697 4.73731C8.16222 4.73589 7.33603 4.98508 6.63295 5.45337C5.92987 5.92165 5.3815 6.58797 5.05724 7.36801C4.73298 8.14805 4.6474 9.00675 4.81133 9.83545C4.97526 10.6641 5.38133 11.4256 5.97816 12.0234C6.57498 12.6213 7.33574 13.0286 8.16416 13.1939C8.99258 13.3593 9.85142 13.2751 10.632 12.9522C11.4126 12.6292 12.0798 12.082 12.5493 11.3797C13.0188 10.6774 13.2694 9.85167 13.2694 9.00691C13.2703 8.44656 13.1608 7.89152 12.947 7.37355C12.7332 6.85558 12.4194 6.38485 12.0235 5.98828C11.6276 5.59172 11.1574 5.27711 10.6398 5.06245C10.1222 4.8478 9.56732 4.73731 9.00697 4.73731Z"/>
+                  <path d="M13.4282 5.55939C13.9611 5.55939 14.393 5.12744 14.393 4.59459C14.393 4.06175 13.9611 3.62979 13.4282 3.62979C12.8954 3.62979 12.4634 4.06175 12.4634 4.59459C12.4634 5.12744 12.8954 5.55939 13.4282 5.55939Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="main-header__table-desktop-buttons table-desktop-buttons">
         <a class="table-desktop-buttons__phone phone-link" href="tel:88005558628">
@@ -186,12 +192,12 @@
       </div>
     </section>
 
-    <section class="main-index__section-border-bottom about-website-section" id="about-website">
+    <section class="site-body__about-website main-index__section-border-bottom about-website-section" id="about-website">
       <div class="about-website-section__wrapper common-text">
         <div class="about-website-section__inner-content-wrapper">
-          <h2 class="about-website-section__title section-title">О свервисе</h2>
-          <p class="section-description common-text__light primary-text-color">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="section-description common-text__bold primary-text-color">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <h2 class="about-website-section__title section-title">О сервисе</h2>
+          <p class="about-website-section__description common-text__light primary-text-color">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="about-website-section__sub-description common-text__bold primary-text-color">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
           <a class="about-website-section__show-more show-more-button primary-style-button" href="#">
             Подробнее
             <span class="visually-hidden">Переход на страницу выбора направления.</span>
@@ -200,32 +206,56 @@
       </div>
     </section>
 
-    <section class="main-index__section-border-bottom direction-section">
+    <section class="site-body__direction main-index__section-border-bottom direction-section">
       <div class="direction-section__wrapper">
         <div class="direction-section__inner-content-wrapper">
-          <h2 class="direction-section__title section-title">Направления</h2>
-          <p class="direction-section__description section-description common-text second-text-color">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <div class="direction-section__text-wrapper">
+            <h2 class="direction-section__title section-title">Направления</h2>
+            <p class="direction-section__description  common-text second-text-color">Мы не продаем туры
+            и ничего не рекламируем.
+            Люди сами пишут о странах,
+            куда хотели бы отправиться
+            и чем можно там заняться.</p>
+          </div>
           <ul class="direction-section__list country-list">
             <li class="country-list__item country-item card">
-              <h3 class="country-item__title card__title">Таиланд</h3>
-              <p class="country-item__slogan card__slogan">Джунгли зовут!</p>
-              <span class="country-item__counter card__counter">18321</span>
+              <div class="country-item__wrapper">
+                <div class="country-item__sub-wrapper">
+                  <div class="country-item__text-wrapper">
+                    <h3 class="country-item__title card__title">Таиланд</h3>
+                    <p class="country-item__slogan card__slogan">Джунгли зовут!</p>
+                  </div>
+                  <span class="country-item__counter card__counter">18321</span>
+                </div>
+                <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/thailand-flag.png" alt="Флаг Таиланда.">
+              </div>
               <img class="country-item__image card-image" width="270" height="110" src="img/card-images/thailand-card.jpg" alt="Условный пейзаж Таиланда.">
-              <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/thailand-flag.png" alt="Флаг Таиланда.">
             </li>
             <li class="country-list__item country-item card">
-              <h3 class="country-item__title card__title">Франция</h3>
-              <p class="country-item__slogan card__slogan">Трэ бьен, манифик!</p>
-              <span class="country-item__counter card__counter">12518</span>
+              <div class="country-item__wrapper">
+                <div class="country-item__sub-wrapper">
+                  <div class="country-item__text-wrapper">
+                    <h3 class="country-item__title card__title">Франция</h3>
+                    <p class="country-item__slogan card__slogan">Трэ бьен, манифик!</p>
+                  </div>
+                  <span class="country-item__counter card__counter">12518</span>
+                </div>
+                <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/france-flag.png" alt="Флаг Франции.">
+              </div>
               <img class="country-item__image card-image" width="270" height="110" src="img/card-images/france-card.jpg" alt="Условный пейзаж Франции.">
-              <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/france-flag.png" alt="Флаг Франции.">
             </li>
             <li class="country-list__item country-item card">
-              <h3 class="country-item__title card__title">Чехия</h3>
-              <p class="country-item__slogan card__slogan">Закоулки старой Европы</p>
-              <span class="country-item__counter card__counter">5326</span>
+              <div class="country-item__wrapper">
+                <div class="country-item__sub-wrapper">
+                  <div class="country-item__text-wrapper">
+                    <h3 class="country-item__title card__title">Чехия</h3>
+                    <p class="country-item__slogan card__slogan">Закоулки старой Европы</p>
+                  </div>
+                  <span class="country-item__counter card__counter">5326</span>
+                </div>
+                <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/czech-flag.png" alt="Флаг Чехии.">
+              </div>
               <img class="country-item__image card-image" width="270" height="110" src="img/card-images/czech-card.jpg" alt="Условный пейзаж Чехии.">
-              <img class="country-item__icon card-flag" width="35" height="24" src="img/icons/flags/czech-flag.png" alt="Флаг Чехии.">
             </li>
           </ul>
           <a class="direction-section__show-more show-more-button primary-style-button" href="form.html">
@@ -236,11 +266,15 @@
       </div>
     </section>
 
-    <section class="main-index__section-border-bottom companion-section">
+    <section class="site-body__companion main-index__section-border-bottom companion-section">
       <div class="companion-section__wrapper common-text">
         <div class="companion-section__text-wrapper">
           <h2 class="companion-section__title section-title">Попутчики</h2>
-          <p class="companion-section__description section-description common-text__light primary-text-color">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="companion-section__description section-description common-text__light primary-text-color">Все мы индивидуальны и у
+            каждого свой взгляд на
+          идеальный отдых. Одному
+          нужен пляж и коктейль, а
+          другому маршрут для хайкинга.</p>
           <p class="companion-section__description section-description common-text__bold primary-text-color">Теперь можно легко найти единомышленников!</p>
         </div>
         <ul class="companion-section__list companion-demo-list">
@@ -258,7 +292,7 @@
       </div>
     </section>
 
-    <section class="main-index__section-border-bottom create-profile-section">
+    <section class="site-body__create-profile main-index__section-border-bottom create-profile-section">
       <div class="create-profile-section__wrapper">
         <div class="create-profile-section__content-wrapper">
           <h2 class="visually-hidden">Тарифы.</h2>
@@ -266,27 +300,27 @@
           свой
           профиль</h3>
           <img class="create-profile-section__profile-icon" width="100" height="100" src="img/icons/profile-icon.png" alt="Схематичное изображение профиля">
-          <ol class="create-profile-section__choice-list rate-choice-list">
+          <ol class="create-profile-section__choice-list rate-choice-list color-order">
             <li class="rate-choice-list__item">
               <div class="rate-choice-list__item-wrapper">
                 <span class="rate-choice-list__name second-text-color">Базовое размещение</span>
                 <span class="rate-choice-list__price">Бесплатно</span>
               </div>
-              <span class="rate-choice-list__order primary-text-color">1</span>
+              <span class="rate-choice-list__order color-order__first primary-text-color">1</span>
             </li>
             <li class="rate-choice-list__item">
               <div class="rate-choice-list__item-wrapper">
                 <span class="rate-choice-list__name second-text-color">Вывод на первых позициях</span>
                 <span class="rate-choice-list__price">99 руб./мес</span>
               </div>
-              <span class="rate-choice-list__order primary-text-color">2</span>
+              <span class="rate-choice-list__order color-order__second primary-text-color">2</span>
             </li>
             <li class="rate-choice-list__item">
               <div class="rate-choice-list__item-wrapper">
                 <span class="rate-choice-list__name second-text-color">Кастомный цвет карточки</span>
                 <span class="rate-choice-list__price">59 руб./мес</span>
               </div>
-              <span class="rate-choice-list__order primary-text-color">3</span>
+              <span class="rate-choice-list__order color-order__third primary-text-color">3</span>
             </li>
           </ol>
           <a class="create-profile-section__show-more rate-show-button" href="rate.html">
@@ -297,39 +331,45 @@
       </div>
     </section>
 
-    <section class="main-index__section-border-bottom registration-section">
+    <section class="site-body__registration main-index__section-border-bottom registration-section">
       <div class="registration-section__wrapper common-text">
         <h2 class="visually-hidden">Регистрация на сервисе.</h2>
         <h3 class="registration-section__title section-title">Заинтересовались?</h3>
         <form class="registration-section__form registration-form" action="https://echo.htmlacademy.ru/" method="get" name="registration-form">
-          <p class="registration-form__description common-text__light primary-text-color">Зарегистрируйтесь, это быстро и бесплатно!Уже зарегистрированы? Тогда скорее
-            <a class="registration-form__link common-text__light third-text-color" href="#">
-              авторизуйтесь
-              <span class="visually-hidden">Авторизация в сервисе Погнали.</span>
-            </a>.
+          <p class="registration-form__description common-text__light primary-text-color">Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда
+          скорее <a class="registration-form__link common-text__light third-text-color" href="#">авторизуйтесь<span class="visually-hidden">Авторизация в сервисе Погнали.</span></a>.
           </p>
-          <div class="registration-form__input">
-            <input class="email-input" type="email" name="user-email" placeholder="E-mail">
-            <button class="registration-form__button primary-style-button" type="submit"></button>
+          <div class="registration-form__input-wrapper">
+            <input class="registration-form__input email-input" type="email" name="user-email" placeholder="E-mail">
+            <button class="registration-form__button primary-style-button" type="submit">
+              <span class="registration-form__button-text">Регистрация</span>
+            </button>
             <span class="visually-hidden">Отправить email для регистрации.</span>
           </div>
         </form>
-        <p class="registration-section__description-help common-text__light primary-text-color">Остались вопросы? Мы с радостью на них ответим!</p>
-        <ul class="registration-section__list common-text__bold user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list-link" href="tel:=88005558628">
-              <svg class="second-phone-icon" aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z"/>
-              </svg>
-              8 800 555-86-28
+        <p class="registration-section__description-help common-text__light primary-text-color">Остались вопросы?
+        Мы с радостью на них ответим!</p>
+        <ul class="registration-section__list common-text__bold second-user-list">
+          <li class="second-user-list__item">
+            <a class="second-user-list__link user-list-link" href="tel:=88005558628">
+              <span class="second-user-list__icon">
+                <svg class="second-phone-icon" aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z"/>
+                </svg>
+              </span>
+              <span class="second-user-list__link-text" >8 800 555-86-28</span>
               <span class="visually-hidden">Телефон сервиса Погнали.</span>
             </a>
           </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list-link" href="mailto:mail@htmlacademy.ru">
-              <svg class="second-mail-icon" aria-hidden="true" focusable="false" width="19" height="13" viewBox="0 0 19 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z"/>
-              </svg>
+          <li class="second-user-list__item">
+            <a class="second-user-list__link user-list-link" href="mailto:mail@htmlacademy.ru">
+              <span class="second-user-list__icon">
+                <svg class="second-mail-icon" aria-hidden="true" focusable="false" width="19" height="13" viewBox="0 0 19 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z"/>
+                </svg>
+              </span>
               mail@htmlacademy.ru
               <span class="visually-hidden">Написать электронное письмо на почту сервиса Погнали.</span>
             </a>
@@ -338,13 +378,15 @@
       </div>
     </section>
 
-    <section class="main-index__section-border-bottom map-section">
+    <section class="site-body__map main-index__section-border-bottom map-section">
       <div class="map-section__wrapper common-text">
         <h2 class="visually-hidden">Адрес сервиса.</h2>
         <div class="map-section__adress-wrapper">
-          <svg class="point-icon" aria-hidden="true" focusable="false" width="17" height="21" viewBox="0 0 17 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.5 0C4.15169 0 0.625 3.52669 0.625 7.875C0.625 12.9334 4.42846 15.1449 5.26923 16.1538C7.28846 18.5769 7.40257 21 8.5 21C9.59743 21 9.71154 18.5769 11.7308 16.1538C12.5715 15.1449 16.375 12.9334 16.375 7.875C16.375 3.52669 12.8483 0 8.5 0ZM8.5 13.125C5.60069 13.125 3.25 10.7743 3.25 7.875C3.25 4.97569 5.60069 2.625 8.5 2.625C11.3993 2.625 13.75 4.97569 13.75 7.875C13.75 10.7743 11.3993 13.125 8.5 13.125ZM8.5 5.25C7.051 5.25 5.875 6.426 5.875 7.875C5.875 9.324 7.051 10.5 8.5 10.5C9.949 10.5 11.125 9.324 11.125 7.875C11.125 6.426 9.949 5.25 8.5 5.25Z"/>
-          </svg>
+          <span class="map-section__icon">
+            <svg class="point-icon" aria-hidden="true" focusable="false" width="17" height="21" viewBox="0 0 17 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 0C4.15169 0 0.625 3.52669 0.625 7.875C0.625 12.9334 4.42846 15.1449 5.26923 16.1538C7.28846 18.5769 7.40257 21 8.5 21C9.59743 21 9.71154 18.5769 11.7308 16.1538C12.5715 15.1449 16.375 12.9334 16.375 7.875C16.375 3.52669 12.8483 0 8.5 0ZM8.5 13.125C5.60069 13.125 3.25 10.7743 3.25 7.875C3.25 4.97569 5.60069 2.625 8.5 2.625C11.3993 2.625 13.75 4.97569 13.75 7.875C13.75 10.7743 11.3993 13.125 8.5 13.125ZM8.5 5.25C7.051 5.25 5.875 6.426 5.875 7.875C5.875 9.324 7.051 10.5 8.5 10.5C9.949 10.5 11.125 9.324 11.125 7.875C11.125 6.426 9.949 5.25 8.5 5.25Z"/>
+            </svg>
+          </span>
           <p class="map-section__description common-text__bold">ул. Большая
           Конюшенная, 19/8</p>
         </div>
@@ -355,12 +397,12 @@
       </div>
     </section>
 
-    <aside class="interactive-map">
+    <aside class="site-body__interactive-map interactive-map">
       <iframe class="interactive-map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa8a6fc3285942fe5a26366cc231487ab789f7cd653528bac07245761e977293e&amp;source=constructor" width="100%" height="424"></iframe>
     </aside>
   </main>
 
-  <footer class="main-footer site-body__footer">
+  <footer class="site-body__footer main-index__section-border-top main-footer site-body__footer">
     <div class="main-footer__wrapper">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
       <a  class="main-footer__logo logo second-text-color" href="#">
@@ -388,8 +430,8 @@
         </li>
         <li class="social-list__item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <svg class="social-icon" aria-hidden="true" focusable="false"  width="30" height="16" viewBox="0 0 30 16" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.7664 11.8331C17.219 11.8207 16.6854 11.6573 16.2232 11.3606C15.7407 11.031 15.2975 10.6459 14.9026 10.2131C14.5761 9.88315 14.0345 9.32815 13.8268 9.32815C13.619 9.32815 13.4706 10.0181 13.478 10.5056C13.4812 10.8422 13.3564 11.167 13.1293 11.4131C12.8712 11.6263 12.5561 11.7569 12.2242 11.7881H10.7997C8.75222 11.7426 6.79178 10.9425 5.28708 9.53815C2.55676 7.01065 0.21224 2.18065 0.115789 1.97065C0.0237889 1.79521 -0.0147389 1.59616 0.00506792 1.3986C0.0248747 1.20105 0.102128 1.01386 0.227079 0.860649C0.509857 0.622256 0.867951 0.494496 1.23611 0.500649H4.26321H4.35224C4.6027 0.537588 4.84277 0.626997 5.05708 0.763149C5.25875 0.899848 5.42022 1.08899 5.5245 1.31065C5.8444 2.00295 6.2113 2.67204 6.62256 3.31315C7.5945 4.81315 8.02482 5.15815 8.18063 5.23315C8.35396 4.52985 8.40169 3.80091 8.3216 3.08065C8.3476 2.7526 8.29412 2.4231 8.16579 2.12065C8.00289 1.98893 7.80288 1.91278 7.5945 1.90315L7.05289 1.38565C6.94901 0.890649 7.49063 0.463149 7.86902 0.298149C8.62414 0.0589723 9.41638 -0.0376377 10.2061 0.013149H10.7329C11.2686 -0.000953053 11.8041 0.0494006 12.328 0.163149C13.5893 0.433149 13.5448 1.46065 13.4929 2.64565C13.4929 2.99065 13.4558 3.39565 13.4558 3.86065C13.4558 3.97315 13.4558 4.09315 13.4558 4.22065C13.4266 4.54717 13.4492 4.87631 13.5226 5.19565C14.1402 4.67331 14.6604 4.04337 15.0584 3.33565C15.4879 2.66645 15.865 1.96431 16.1861 1.23565V1.23565C16.2839 1.00519 16.4516 0.812043 16.6649 0.684009C16.8782 0.555974 17.1262 0.499653 17.3732 0.523149H20.5487C20.6425 0.514104 20.7369 0.514104 20.8306 0.523149C21.5726 0.523149 22.0103 0.740649 22.1884 1.16065C22.3664 1.58065 22.3145 2.40565 20.4374 4.61815L19.6955 5.46565C19.336 5.81847 19.0264 6.21976 18.7755 6.65815C19.0565 6.98108 19.3754 7.2682 19.7251 7.51315C20.5778 8.16264 21.3283 8.93895 21.951 9.81565C22.097 9.98613 22.1925 10.1948 22.2266 10.4176C22.2608 10.6405 22.2321 10.8685 22.1439 11.0756C21.9884 11.3051 21.7803 11.4931 21.5375 11.6237C21.2946 11.7542 21.0241 11.8235 20.749 11.8256L17.9371 11.8631L17.7664 11.8331ZM13.8268 8.20315C14.4945 8.20315 15.0732 8.79565 15.689 9.41815C16.0217 9.78534 16.3951 10.1125 16.8019 10.3931C17.1096 10.6 17.4711 10.7096 17.8406 10.7081H17.9148L20.7342 10.6706C20.8732 10.6626 21.0094 10.6269 21.1348 10.5656L21.0606 10.4456C20.499 9.67196 19.8292 8.98479 19.0722 8.40565C18.1893 7.65565 17.7368 7.30315 17.6848 6.72565C17.6329 6.14815 18.0484 5.64565 18.8793 4.69315L19.6213 3.86065C20.2477 3.21479 20.7618 2.46681 21.1422 1.64815C20.9767 1.63823 20.8107 1.63823 20.6451 1.64815H17.4029C17.3443 1.6349 17.2835 1.6349 17.2248 1.64815C16.8814 2.44423 16.4719 3.20947 16.0006 3.93565C14.5984 6.05065 13.938 6.33565 13.4706 6.33565C13.3257 6.33565 13.183 6.29959 13.0551 6.23065C12.3132 5.80315 12.3132 4.85065 12.3577 4.16065C12.3577 4.04815 12.3577 3.93565 12.3577 3.83815C12.3577 3.35065 12.3577 2.93065 12.3948 2.57065C12.4542 1.31065 12.3948 1.30315 12.1129 1.23565C11.6586 1.14491 11.1958 1.10467 10.7329 1.11565H10.221C9.74988 1.10581 9.27872 1.13088 8.81127 1.19065C8.88207 1.24338 8.94459 1.30659 8.99676 1.37815C9.30278 1.8659 9.4554 2.43595 9.4345 3.01315C9.53095 4.25065 9.47901 5.86315 8.69256 6.25315C8.5533 6.31903 8.40115 6.35235 8.2474 6.35065C7.5574 6.35065 6.87482 5.69065 5.70998 3.90565C5.26298 3.22218 4.86383 2.50794 4.51547 1.76815L4.45611 1.69315C4.38118 1.65454 4.30126 1.62677 4.21869 1.61065H1.25095H1.19901C1.63676 2.52565 3.71418 6.57565 6.03643 8.69815C7.34044 9.90918 9.02994 10.6088 10.7997 10.6706H12.1722C12.2422 10.6555 12.3097 10.6303 12.3726 10.5956C12.3726 10.5956 12.3726 10.5956 12.3726 10.5281C12.3726 10.3256 12.3726 8.57815 13.5448 8.27815C13.6356 8.24202 13.7302 8.21685 13.8268 8.20315V8.20315Z"/>
+            <svg class="social-icon" aria-hidden="true" focusable="false" width="31" height="16" viewBox="0 0 31 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.8332 15.7888C24.0954 15.7722 23.3762 15.5543 22.7532 15.1588C22.1028 14.7192 21.5055 14.2058 20.9732 13.6288C20.5332 13.1888 19.8032 12.4488 19.5232 12.4488C19.2432 12.4488 19.0432 13.3688 19.0532 14.0188C19.0574 14.4674 18.8892 14.9006 18.5832 15.2288C18.2352 15.513 17.8105 15.6871 17.3632 15.7288H15.4432C12.6836 15.6681 10.0412 14.6012 8.01316 12.7288C4.33316 9.35876 1.17316 2.91876 1.04316 2.63876C0.919163 2.40485 0.867235 2.13944 0.893931 1.87604C0.920627 1.61263 1.02475 1.36304 1.19316 1.15876C1.5743 0.840905 2.05695 0.670559 2.55316 0.678762H6.63316H6.75316C7.09074 0.728014 7.41432 0.847226 7.70316 1.02876C7.97498 1.21103 8.19262 1.46321 8.33316 1.75876C8.76434 2.68183 9.25885 3.57396 9.81316 4.42876C11.1232 6.42876 11.7032 6.88876 11.9132 6.98876C12.1468 6.05102 12.2111 5.07911 12.1032 4.11876C12.1382 3.68137 12.0661 3.24203 11.8932 2.83876C11.6736 2.66314 11.404 2.56161 11.1232 2.54876L10.3932 1.85876C10.2532 1.19876 10.9832 0.628762 11.4932 0.408762C12.5109 0.0898602 13.5787 -0.0389531 14.6432 0.0287625H15.3532C16.0752 0.00995973 16.797 0.0770979 17.5032 0.228762C19.2032 0.588763 19.1432 1.95876 19.0732 3.53876C19.0732 3.99876 19.0232 4.53876 19.0232 5.15876C19.0232 5.30876 19.0232 5.46876 19.0232 5.63876C18.9838 6.07412 19.0142 6.51297 19.1132 6.93876C19.9457 6.24231 20.6468 5.40239 21.1832 4.45876C21.7621 3.5665 22.2703 2.63031 22.7032 1.65876C22.835 1.35148 23.061 1.09395 23.3485 0.923242C23.636 0.75253 23.9703 0.677434 24.3032 0.708763H28.5832C28.7095 0.696702 28.8368 0.696702 28.9632 0.708763C29.9632 0.708763 30.5532 0.998762 30.7932 1.55876C31.0332 2.11876 30.9632 3.21876 28.4332 6.16876L27.4332 7.29876C26.9487 7.7692 26.5314 8.30424 26.1932 8.88876C26.5719 9.31934 27.0018 9.70216 27.4732 10.0288C28.6224 10.8948 29.6339 11.9298 30.4732 13.0988C30.67 13.3261 30.7988 13.6042 30.8447 13.9014C30.8907 14.1985 30.8521 14.5026 30.7332 14.7788C30.5236 15.0846 30.2432 15.3353 29.9159 15.5094C29.5885 15.6836 29.2239 15.776 28.8532 15.7788L25.0632 15.8288L24.8332 15.7888ZM19.5232 10.9488C20.4232 10.9488 21.2032 11.7388 22.0332 12.5688C22.4815 13.0583 22.9848 13.4946 23.5332 13.8688C23.9478 14.1445 24.4352 14.2907 24.9332 14.2888H25.0332L28.8332 14.2388C29.0206 14.228 29.2041 14.1804 29.3732 14.0988L29.2732 13.9388C28.5162 12.9072 27.6134 11.991 26.5932 11.2188C25.4032 10.2188 24.7932 9.74876 24.7232 8.97876C24.6532 8.20876 25.2132 7.53876 26.3332 6.26876L27.3332 5.15876C28.1774 4.29762 28.8705 3.30031 29.3832 2.20876C29.16 2.19553 28.9363 2.19553 28.7132 2.20876H24.3432C24.2641 2.1911 24.1822 2.1911 24.1032 2.20876C23.6403 3.27021 23.0883 4.29052 22.4532 5.25876C20.5632 8.07876 19.6732 8.45876 19.0432 8.45876C18.8478 8.45876 18.6555 8.41068 18.4832 8.31876C17.4832 7.74876 17.4832 6.47876 17.5432 5.55876C17.5432 5.40876 17.5432 5.25876 17.5432 5.12876C17.5432 4.47876 17.5432 3.91876 17.5932 3.43876C17.6732 1.75876 17.5932 1.74876 17.2132 1.65876C16.6009 1.53778 15.9771 1.48413 15.3532 1.49876H14.6632C14.0282 1.48564 13.3932 1.51907 12.7632 1.59876C12.8586 1.66907 12.9429 1.75335 13.0132 1.84876C13.4256 2.4991 13.6313 3.25917 13.6032 4.02876C13.7332 5.67876 13.6632 7.82876 12.6032 8.34876C12.4155 8.4366 12.2104 8.48103 12.0032 8.47876C11.0732 8.47876 10.1532 7.59876 8.58316 5.21876C7.98068 4.30748 7.4427 3.35515 6.97316 2.36876L6.89316 2.26876C6.79218 2.21729 6.68446 2.18026 6.57316 2.15876H2.57316H2.50316C3.09316 3.37876 5.89316 8.77876 9.02316 11.6088C10.7807 13.2235 13.0579 14.1563 15.4432 14.2388H17.2932C17.3875 14.2186 17.4785 14.1849 17.5632 14.1388C17.5632 14.1388 17.5632 14.1388 17.5632 14.0488C17.5632 13.7788 17.5632 11.4488 19.1432 11.0488C19.2655 11.0006 19.393 10.967 19.5232 10.9488Z"/>
             </svg>
             <span class="visually-hidden">Переход в Вконтакте.</span>
           </a>

@@ -7,13 +7,42 @@
 }
 
 .rate-choice-list__item {
+  position: relative;
+  min-height: 44px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #e1e3e9;
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: #e1e3e9;
+  }
 }
 
 .rate-choice-list__item-wrapper {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -22,6 +51,13 @@
 }
 
 .rate-choice-list__order {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @media (min-width: @tablet-width) {
     order: 1;
   }

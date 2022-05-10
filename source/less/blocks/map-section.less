@@ -4,9 +4,10 @@
 
 .map-section__wrapper {
   .mixin-phone-container();
+  margin-top: 31px;
+  padding-bottom: 35px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
@@ -20,15 +21,32 @@
 }
 
 .map-section__adress-wrapper {
+  margin-bottom: 33px;
   display: flex;
   align-items: center;
 }
 
+.map-section__icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: @nineteen-background-color;
+}
+
 .map-section__description {
+  margin: 0;
   white-space: pre-line;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     white-space: normal;
   }
+}
+
+.map-section__button {
+  border: 3px solid  @second-background-color;
 }

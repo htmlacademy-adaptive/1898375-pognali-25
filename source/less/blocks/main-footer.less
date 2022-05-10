@@ -4,6 +4,7 @@
 
 .main-footer__wrapper {
   .mixin-phone-container();
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -21,18 +22,33 @@
 
 .main-footer__logo {
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .main-footer__social-list {
   .mixin-list-normalize();
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .main-footer__developer-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 270px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: -13px;
+    left: 0;
+    background-color: @twenty-background-color;
+  }
 }
 
 .main-footer__developer {
