@@ -28,6 +28,7 @@
 
   @media (min-width: @tablet-width) {
     align-items: center;
+    padding-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,6 +43,10 @@
   margin-bottom: 245px;
   white-space: pre-line;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 86px;
+  }
 }
 
 .entrance-section__list {
@@ -65,7 +70,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 317px);
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
