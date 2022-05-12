@@ -1,6 +1,4 @@
 .about-website-section {
-  padding-top: 33px;
-  padding-bottom: 82px;
   background-color: @second-background-color;
   background-image: url("../img/background/service-example-image.png"), url("../img/background/companion-black-square.png");
   background-position: center, top left;
@@ -9,11 +7,15 @@
 
 .about-website-section__wrapper {
   .mixin-phone-container();
+  padding-top: 33px;
+  padding-bottom: 82px;
   display: flex;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
+    padding-top: 48px;
+    padding-bottom: 89px;
     justify-content: flex-start;
   }
 
@@ -37,15 +39,33 @@
 .about-website-section__title {
   margin: 0;
   margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
 }
 
 .about-website-section__description {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 31px;
+  }
 }
 
 .about-website-section__sub-description {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 52px;
+  }
 }
 
 .about-website-section__show-more {
@@ -53,6 +73,8 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    width: 276px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
