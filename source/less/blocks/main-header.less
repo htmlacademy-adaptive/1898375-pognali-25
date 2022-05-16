@@ -3,6 +3,14 @@
   top: 0;
   width: 100%;
   background-color: @sixteen-background-color;
+
+  @media (min-width: @tablet-width) {
+    background-color: @twenty-two-background-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @fifteen-background-color;
+  }
 }
 
 .main-header--nojs {
@@ -12,11 +20,13 @@
 
 .main-header__navigation {
   .mixin-phone-container();
-  min-height: 73px;
+  padding-top: 24px;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
-    min-height: 132px;
+    padding-top: 43px;
+    padding-bottom: 43px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,6 +35,8 @@
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

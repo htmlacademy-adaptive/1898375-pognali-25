@@ -1,8 +1,5 @@
 .about-website-section {
   background-color: @second-background-color;
-  background-image: url("../img/background/service-example-image.png"), url("../img/background/companion-black-square.png");
-  background-position: center, top left;
-  background-repeat: no-repeat, no-repeat;
 }
 
 .about-website-section__wrapper {
@@ -11,16 +8,27 @@
   padding-bottom: 82px;
   display: flex;
   justify-content: center;
+  background-image: url("../img/background/service-example-image.png"), url("../img/background/companion-black-square.png");
+  background-position: center, top left;
+  background-repeat: no-repeat, no-repeat;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
     padding-top: 48px;
     padding-bottom: 89px;
     justify-content: flex-start;
+    background-image: url("../img/background/second-service-example-image.png"), url("../img/background/companion-black-rectangle.png");
+    background-position: right, top center;
+    background-repeat: no-repeat, no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
+    align-items: flex-start;
+    padding-top: 95px;
+    padding-bottom: 278px;
+    background-image: url("../img/background/third-service-example-image.png"), url("../img/background/companion-black-square.png");
+    background-position: 750px 111px, 63px 52px;
   }
 }
 
@@ -29,10 +37,12 @@
 
   @media (min-width: @tablet-width) {
     width: 309px;
+    padding-left: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 619px;
+    padding-left: 70px;
   }
 }
 
@@ -41,8 +51,6 @@
   margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    font-size: 45px;
-    line-height: 45px;
     margin-bottom: 40px;
   }
 }
@@ -52,8 +60,6 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    font-size: 28px;
-    line-height: 33px;
     margin-bottom: 31px;
   }
 }

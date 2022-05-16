@@ -1,3 +1,55 @@
 .modal-wrapper {
   display: none;
+  width: 270px;
+  position: absolute;
+  bottom: -577%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+  background-color: @primary-background-color;
+  z-index: 60;
+
+  @media (min-width: @tablet-width) {
+    width: 688px;
+    bottom: -225%;
+    box-shadow: 0 4px 22px rgba(29, 46, 91, 0.18);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 750px;
+    bottom: -152%;
+  }
+}
+
+.modal-wrapper--modal-open {
+  display: block;
+}
+
+.modal-wrapper__container {
+  width: 220px;
+  margin: 0 auto;
+  padding: 0 25px;
+  padding-top: 34px;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: @tablet-width) {
+    width: 608px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 632px;
+    padding: 0 59px;
+  }
+}
+
+.modal-container__title {
+  align-self: center;
+}
+
+.modal-container__list {
+  .mixin-list-normalize ();
 }

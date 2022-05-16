@@ -45,3 +45,32 @@
     margin-right: 0;
   }
 }
+
+// link animation
+
+.site-list__item .site-list__link {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.site-list__link .site-list__span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.site-list__span {
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
+    color: @eighth-text-color;
+  }
+}
+
+.site-list__link:hover .site-list__span,
+.site-list__link:active .site-list__span {
+  transform: translateY(-100%);
+}

@@ -7,23 +7,26 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 37px;
   padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
     align-items: center;
+    padding-top: 74px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
+    padding-top: 107px;
+    padding-bottom: 165px;
   }
 }
 
 .create-profile-section__content-wrapper {
   width: 246px;
-  margin-top: 37px;
   display: grid;
-  row-gap: 31px;
   grid-template-areas:
     "create-profile-section__title create-profile-section__profile-icon"
     "create-profile-section__choice-list create-profile-section__choice-list"
@@ -31,6 +34,9 @@
 
   @media (min-width: @tablet-width) {
     width: 688px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -48,17 +54,65 @@
   @media (min-width: @tablet-width) {
     white-space: nowrap;
     align-self: center;
+    margin-bottom: 93px;
   }
 }
 
 .create-profile-section__profile-icon {
   margin-left: auto;
+  margin-bottom: 34px;
   grid-area: create-profile-section__profile-icon;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .create-profile-section__choice-list {
   .mixin-list-normalize ();
+  position: relative;
+  margin-bottom: 46px;
   grid-area: create-profile-section__choice-list;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      width: 198px;
+      height: 285px;
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+      border-radius: 20px;
+      background-color: @seven-background-color;
+    }
+
+    &::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 48px;
+      bottom: -113px;
+      background-image: url("/img/icons/profile-icon.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 446px;
+      height: 300px;
+      right: 106px;
+    }
+
+    &::after {
+      width: 198px;
+      height: 198px;
+      right: -5px;
+      bottom: 8px;
+    }
+  }
 }
 
 .create-profile-section__show-more {

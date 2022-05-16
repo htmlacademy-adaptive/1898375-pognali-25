@@ -5,4 +5,25 @@
   line-height: 16px;
   color: @seven-text-color;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      content: url("/img/icons/businessman-icon.svg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 66px;
+      height: 66px;
+      margin-right: 20px;
+      border-radius: 50%;
+      left: 0;
+      bottom: 0;
+      background-color: @seven-background-color;
+    }
+  }
 }

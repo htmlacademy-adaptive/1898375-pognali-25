@@ -4,12 +4,17 @@
   font-size: 16px;
   line-height: 16px;
   color: @fourth-text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .rate-choice-list__item {
   position: relative;
   min-height: 44px;
-  margin-bottom: 32px;
+  margin-bottom: 21px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,24 +23,41 @@
     margin-bottom: 0;
   }
 
-  &::before {
+  &:first-child::before {
     content: "";
-    position: absolute;
-    top: -7px;
     display: block;
+    position: absolute;
+    top: -6px;
     width: 200px;
     height: 1px;
     background-color: #e1e3e9;
+
+    @media (min-width: @tablet-width) {
+      width: 563px;
+      top: 0;
+      left: 92px;
+    }
   }
 
-  &:last-child::after {
+  &::after {
     content: "";
+    display: block;
     position: absolute;
     bottom: -17px;
-    display: block;
     width: 200px;
     height: 1px;
     background-color: #e1e3e9;
+
+    @media (min-width: @tablet-width) {
+      width: 563px;
+      bottom: 0;
+      left: 92px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: normal;
+    margin-bottom: 0;
   }
 }
 
@@ -45,8 +67,15 @@
   align-self: flex-end;
 
   @media (min-width: @tablet-width) {
-    order: 2;
+    width: 563px;
     flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 814px;
   }
 }
 
@@ -59,6 +88,9 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 22px;
     order: 1;
   }
 }

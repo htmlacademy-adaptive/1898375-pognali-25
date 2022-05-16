@@ -4,19 +4,29 @@
 
 .map-section__wrapper {
   .mixin-phone-container();
-  margin-top: 31px;
+  padding-top: 31px;
   padding-bottom: 35px;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
+    padding-top: 48px;
+    padding-bottom: 84px;
   }
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
+    padding-top: 55px;
+    padding-bottom: 56px;
+  }
+}
+
+.map-section__content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 255px;
     flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -24,6 +34,14 @@
   margin-bottom: 33px;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .map-section__icon {
@@ -35,6 +53,21 @@
   align-items: center;
   border-radius: 50px;
   background-color: @nineteen-background-color;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 26px;
+  }
+}
+
+.map-section__icon-image {
+  fill: @fourth-background-color;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 32px;
+  }
 }
 
 .map-section__description {
@@ -49,4 +82,15 @@
 
 .map-section__button {
   border: 3px solid  @second-background-color;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 618px;
+    margin-left: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 324px;
+    margin-left: 147px;
+  }
 }

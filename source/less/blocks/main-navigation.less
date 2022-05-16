@@ -41,9 +41,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
-    width: 390px;
+    width: 689px;
     margin-right: auto;
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: @sixteen-background-color;
@@ -79,7 +79,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 390px;
     margin: 0;
     padding: 0;
   }
@@ -149,6 +148,11 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: @eleven-text-color;
+  }
+
   &:active::before,
   &:active::after {
     background-color: fade(@twenty-one-background-color, 30%);
@@ -171,6 +175,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     margin-bottom: 0;
+    background-color: @fifteen-background-color;
   }
 }
 
