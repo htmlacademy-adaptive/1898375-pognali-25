@@ -1,0 +1,114 @@
+.country-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.country-item__wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -9px;
+  border-radius: 10px;
+  background-color: @primary-background-color;
+  order: 1;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+    padding-right: 29px;
+    padding-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    z-index: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.country-item__sub-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    order: 1;
+  }
+}
+
+.country-item__text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.country-item__title {
+  margin: 0;
+  order: 2;
+}
+
+.country-item__slogan {
+  margin: 0;
+  order: 3;
+}
+
+.country-item__counter {
+  margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.country-item__icon {
+  margin-top: -13px;
+  margin-bottom: 15px;
+  order: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+    margin-right: -65px;
+  }
+}
+
+.country-item__image {
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 185px;
+    height: 140px;
+    order: 2;
+    z-index: 0;
+    object-fit: contain;
+  }
+}
+
+.country-list__item:nth-of-type(1) .country-item__image {
+  @media (min-width: @tablet-width) {
+    content: url("../img/card-images/thailand-card-second.png");
+  }
+}
+
+.country-list__item:nth-of-type(2) .country-item__image {
+  @media (min-width: @tablet-width) {
+    content: url("../img/card-images/france-card-second.png");
+  }
+}
+
+.country-list__item:nth-of-type(3) .country-item__image {
+  @media (min-width: @tablet-width) {
+    content: url("../img/card-images/czech-card-second.png");
+  }
+}

@@ -1,9 +1,35 @@
+.main-index {
+  margin-top: 73px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 128px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 90px;
+  }
+}
+
+.main-index--nojs {
+  margin-top: 0;
+}
+
 .main-index__section-border-bottom {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+
+  @media (min-width: @desktop-width) {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
 }
 
 .main-index__section-border-top {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  @media (min-width: @desktop-width) {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
 }

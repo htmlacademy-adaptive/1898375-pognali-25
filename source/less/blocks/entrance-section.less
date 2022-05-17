@@ -1,8 +1,16 @@
 .entrance-section {
-  background-color: @second-background-color;
-  background-image: url("../img/background/traveller-illustration.png"), url("../img/background/header-back.png");
-  background-position: bottom, top;
-  background-repeat: no-repeat, no-repeat;
+  background: linear-gradient(to bottom, #161c35 71%, #192144 29%);
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, #182044 71%, #192144 29%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: none;
+    background-color: @fifteen-background-color;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
 }
 
 .entrance-section__wrapper {
@@ -10,13 +18,35 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-bottom: 39px;
+  background-image: url("../img/background/traveller-illustration.png"), url("../img/background/planet-back.png");
+  background-position: 79px 132px, center -17px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 192px 255px, contain;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
+    padding-top: 30px;
+    padding-bottom: 48px;
+    background-image: url("../img/background/traveller-illustration-second.png"), url("../img/background/planet-back-second.png");
+    background-position: 251px 245px, center 281px;
+    background-size: 372px 451px, 768px 612px;
   }
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
+    padding-bottom: 123px;
+    background-image: url("../img/background/traveller-illustration-third.png"), url("../img/background/planet-back-third.png");
+    background-position: 577px 17px, 0;
+    background-size: 413px 640px, 1440px 750px;
+    background-repeat: no-repeat, no-repeat;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  @media (min-width: 1520px) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -32,17 +62,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: self-start;
   }
 }
 
 .entrance-section__slogan {
   margin: 0;
+  margin-bottom: 245px;
   white-space: pre-line;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 110px;
+    margin-bottom: 107px;
+  }
 }
 
 .entrance-section__list {
   .mixin-list-normalize();
   display: flex;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -60,18 +103,26 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 317px);
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(4, 297px);
-    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .entrance-section__quote {
+  margin: 0;
+  margin-bottom: 29px;
+
   @media (min-width: @tablet-width) {
     align-self: flex-start;
+    margin-bottom: 211px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 122px;
+    margin-bottom: 107px;
   }
 }

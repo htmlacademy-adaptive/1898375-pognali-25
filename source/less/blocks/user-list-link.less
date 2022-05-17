@@ -8,6 +8,30 @@
   text-transform: uppercase;
 }
 
+.user-list-link:hover {
+  color: @eleven-text-color;
+}
+
+.user-list-link:active {
+  color: fade(@eleven-text-color, 30%);
+}
+
+.user-list-link:disabled {
+  background-color: @disable-background-color;
+}
+
 .user-list-link__text-color {
   color: @nine-text-color;
+}
+
+.user-list-link:hover .user-list-link__text-color {
+  color: @eleven-text-color;
+}
+
+.user-list-link:active .user-list-link__text-color {
+  color: fade(@eleven-text-color, 30%);
+}
+
+.user-list-link:disabled .user-list-link__text-color {
+  color: @disable-background-color;
 }

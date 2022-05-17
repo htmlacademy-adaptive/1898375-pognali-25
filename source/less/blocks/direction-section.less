@@ -4,45 +4,100 @@
 
 .direction-section__wrapper {
   .mixin-phone-container();
+  padding-top: 71px;
+  padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
+    padding-top: 73px;
+    padding-bottom: 80px;
+    background-image: url("../img/background/companion-grey-square.png"), url("../img/background/flags-back.png");
+    background-position: 43px 429px, 445px 103px;
+    background-repeat: no-repeat, no-repeat;
   }
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
-    display: flex;
-    justify-content: center;
+    padding-top: 161px;
+    padding-bottom: 138px;
+    background-position: 62px 85px, 1086px 81px;
   }
 }
 
 .direction-section__inner-content-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
-    width: 620px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1008px;
+    padding: 0;
     display: grid;
-    grid-template-areas: "direction-section__list direction-section__title" "direction-section__list direction-section__description" "direction-section__list direction-section__description" "direction-section__list direction-section__show-more";
+    grid-template-areas:
+      "direction-section__list direction-section__title"
+      "direction-section__list direction-section__show-more";
+  }
+}
+
+.direction-section__text-wrapper {
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  padding-left: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 104px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 371px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 98px;
+    padding-left: 0;
   }
 }
 
 .direction-section__title {
   margin: 0;
-  grid-area: direction-section__title;
+  margin-bottom: 19px;
+
+  @media (min-width: @desktop-width) {
+    grid-area: direction-section__title;
+  }
 }
 
 .direction-section__list {
   .mixin-list-normalize ();
-  grid-area: direction-section__list;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 560px;
+    grid-area: direction-section__list;
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
 
 .direction-section__description {
   margin: 0;
+  white-space: pre-line;
   grid-area: direction-section__description;
 }
 
 .direction-section__show-more {
-  grid-area: direction-section__show-more;
+  @media (min-width: @desktop-width) {
+    width: 275px;
+    box-sizing: border-box;
+    align-self: flex-end;
+    grid-area: direction-section__show-more;
+  }
 }

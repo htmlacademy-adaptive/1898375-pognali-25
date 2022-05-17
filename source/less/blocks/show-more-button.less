@@ -1,5 +1,24 @@
 .show-more-button {
+  padding: 22px 23px;
+  border-radius: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.map-section__wrapper .show-more-button {
+  &:hover {
+    background-color: @second-background-color;
+    color: @primary-background-color;
+  }
+
+  &:active {
+    background-color: @second-background-color;
+    color: fade(@primary-background-color, 30%);
+  }
 }

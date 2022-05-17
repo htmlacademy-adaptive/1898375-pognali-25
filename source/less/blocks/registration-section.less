@@ -7,22 +7,86 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 72px;
+  padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     .mixin-table-container();
+    padding-top: 76px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
     .mixin-desktop-container();
+    padding-top: 109px;
+    padding-bottom: 103px;
+  }
+}
+
+.registration-section__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.registration-section__description-help {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-self: center;
+  }
+}
+
+.registration-section__description-help br {
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    &:nth-of-type(1) {
+      display: block;
+    }
   }
 }
 
 .registration-section__list {
   .mixin-list-normalize ();
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    margin-left: 34px;
+  }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    margin: 0;
+    flex-direction: row;
     align-self: center;
+  }
+}
+
+.second-user-list__item {
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-right: 110px;
+    }
+  }
+}
+
+.registration-section__form {
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 62px;
   }
 }
