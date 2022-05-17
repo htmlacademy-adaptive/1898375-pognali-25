@@ -212,7 +212,7 @@
           <div class="direction-section__text-wrapper">
             <h2 class="direction-section__title section-title">Направления</h2>
             <p class="direction-section__description  common-text second-text-color">
-             <span class="common-text__light">Мы не продаем туры
+            <span class="common-text__light">Мы не продаем туры
             и ничего не рекламируем.
             Люди сами пишут о странах,
             куда хотели бы отправиться
@@ -290,6 +290,41 @@
           <span class="visually-hidden">Переход на страницу выбора попутчиков.</span>
         </a>
       </div>
+      <div class="modal-wrapper modal-wrapper--modal-open">
+        <div class="modal-wrapper__container modal-container">
+          <p class="modal-container__title section-title">Бизнес-тарифы</p>
+          <ul class="modal-container__list modal-list">
+            <li class="modal-list__item">
+              <span class="modal-list__item-style">
+                <span class="modal-list__rate-name">Реклама у блогера</span>
+                <span class="modal-list__item-rate-price">300 000 руб./пост</span>
+              </span>
+            </li>
+            <li class="modal-list__item">
+              <span class="modal-list__item-style">
+                <span class="modal-list__rate-name">Накрутка подписчиков</span>
+                <span class="modal-list__rate-price">от 1 руб./шт.</span>
+              </span>
+            </li>
+            <li class="modal-list__item">
+              <span class="modal-list__item-style">
+                <span class="modal-list__rate-name">Лайки от ботов</span>
+                <span class="modal-list__rate-price">от 20 руб./лайк</span>
+              </span>
+            </li>
+            <li class="modal-list__item">
+              <span class="modal-list__item-style">
+                <span class="modal-list__rate-name">Ваш продакт-плейсмент</span>
+                <span class="modal-list__rate-price">Индивидуально</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <a class="modal-wrapper__close-button modal-close-button second-style-button" href="#">
+          закрыть окно
+          <span class="visually-hidden">Закрыть окно тарифов.</span>
+        </a>
+      </div>
     </section>
 
     <section class="site-body__create-profile main-index__section-border-bottom create-profile-section">
@@ -340,9 +375,9 @@
           Зарегистрируйтесь, <br> это быстро и бесплатно! <br>
           Уже зарегистрированы? Тогда <br> скорее
             <a class="registration-form__link common-text__light third-text-color" href="#">
-              авторизуйтесь
+              авторизуйтесь.
               <span class="visually-hidden">Авторизация в сервисе Погнали.</span>
-            </a>.
+            </a>
           </p>
           <div class="registration-form__input-wrapper">
             <input class="registration-form__input email-input" type="email" name="user-email" placeholder="E-mail">
@@ -405,9 +440,11 @@
 
     <aside class="site-body__interactive-map interactive-map">
       <iframe class="interactive-map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa8a6fc3285942fe5a26366cc231487ab789f7cd653528bac07245761e977293e&amp;source=constructor"></iframe>
+    </aside>
+
   </main>
 
-  <footer class="site-body__footer main-index__section-border-top main-footer site-body__footer">
+  <footer class="site-body__footer main-footer site-body__footer">
     <div class="main-footer__wrapper">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
       <a  class="main-footer__logo logo second-text-color" href="#">
@@ -460,33 +497,6 @@
       </div>
     </div>
   </footer>
-  <div class="modal-wrapper modal-wrapper--modal-open">
-    <div class="modal-wrapper__container">
-      <p class="modal-container__title section-title">Бизнес-тарифы</p>
-      <ul class="modal-container__list modal-list">
-        <li class="modal-list__item">
-          <span class="modal-list__rate-name">Реклама у блогера</span>
-          <span class="modal-list__item-rate-price">300 000 руб./пост</span>
-        </li>
-        <li class="modal-list__item">
-          <span class="modal-list__rate-name">Накрутка подписчиков</span>
-          <span class="modal-list__rate-price">от 1 руб./шт.</span>
-        </li>
-        <li class="modal-list__item">
-          <span class="modal-list__rate-name">Лайки от ботов</span>
-          <span class="modal-list__rate-price">от 20 руб./лайк</span>
-        </li>
-        <li class="modal-list__item">
-          <span class="modal-list__rate-name">Ваш продакт-плейсмент</span>
-          <span class="modal-list__rate-price">Индивидуально</span>
-        </li>
-      </ul>
-      <a class="modal-container__close-button modal-close-button second-style-button" href="#">
-        закрыть окно
-        <span class="visually-hidden">Закрыть окно тарифов.</span>
-      </a>
-    </div>
-  </div>
 </body>
 <script src="js/main-header.js"></script>
 </html>

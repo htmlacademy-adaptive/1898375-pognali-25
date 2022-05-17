@@ -1,5 +1,12 @@
 .main-footer {
   background-color: @primary-background-color;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  @media (min-width: @desktop-width) {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
 }
 
 .main-footer__wrapper {
